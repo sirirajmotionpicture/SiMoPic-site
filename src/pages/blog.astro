@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const pageTitle = "Blog";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		
+		<h1>{pageTitle}</h1>
+		<h2>... and my new Astro site!</h2>
+
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere neque inventore maxime asperiores! Molestias, necessitatibus! Obcaecati ea facilis neque eveniet. Numquam veniam quisquam voluptas reprehenderit vero corporis tempore amet accusamus?</p>
+
+		<ul>
+			{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.image.url} />)}
+        </ul>
+
+	</body>
+</html>

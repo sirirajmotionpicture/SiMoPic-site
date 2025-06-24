@@ -1,0 +1,59 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+
+    <a href="../projects"><div class ="pagecat">PROJECT</div></a>
+    <div class = "pagetitle">{frontmatter.title}</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4">
+
+        <div class="col-span-1">
+            <div class="border-zinc-400 border-1 mb-4">
+                <img src={frontmatter.image}/>
+            </div>
+
+            <div class="2xl:hidden">
+                <div class="sectionh">✏️ Details</div>
+
+                <div class="sectionb">
+                    <div class="grid grid-cols-4">
+                        <div class="col-span-1"><b>Date</b></div>
+                        <div class="col-span-3">{frontmatter.date.month} {frontmatter.date.day}, {frontmatter.date.year}</div>
+                        <div class="col-span-1"><b>Location</b></div>
+                        <div class="col-span-3">{frontmatter.place}</div>
+                        <div class="col-span-1"><b>Register</b></div>
+                        <div class="col-span-3">{frontmatter.regisopen.month} {frontmatter.regisopen.day}, {frontmatter.regisopen.year} ～ {frontmatter.regisclose.month} {frontmatter.regisclose.day}, {frontmatter.regisclose.year}</div>
+                    </div>      
+                </div>
+                <a href= {frontmatter.regislink} class=""><div class="button w-full">📮Register here</div></a>    
+            </div>
+        </div>
+
+        <div class="col-span-2 px-0 md:px-8">
+            <slot />
+        </div>
+
+        <div class="col-span-1 hidden 2xl:inline">
+
+            <div class="sectionh">✏️ Details</div>
+
+            <div class="sectionb">
+                <div class="grid grid-cols-4">
+                    <div class="col-span-1"><b>Date</b></div>
+                    <div class="col-span-3">{frontmatter.date.month} {frontmatter.date.day}, {frontmatter.date.year}</div>
+                    <div class="col-span-1"><b>Location</b></div>
+                    <div class="col-span-3">{frontmatter.place}</div>
+                    <div class="col-span-1"><b>Register</b></div>
+                    <div class="col-span-3">{frontmatter.regisopen.month} {frontmatter.regisopen.day}, {frontmatter.regisopen.year} ～ {frontmatter.regisclose.month} {frontmatter.regisclose.day}, {frontmatter.regisclose.year}</div>
+                </div> 
+            </div>
+
+            <a href= {frontmatter.regislink} class=""><div class="button w-full">📮Register here</div></a>
+        </div>
+
+    </div>
+
+</BaseLayout>

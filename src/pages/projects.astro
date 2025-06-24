@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
+const pageTitle = "Projects - Siriraj Motion Picture Club";
+---
+<BaseLayout pageTitle={pageTitle}>
+
+	<div class ="pagetitle">PROJECTS</div>
+
+	<div class="columns-1 lg:columns-2 2xl:columns-3 gap-4">
+		{allProjects.reverse().map((post: any) => 
+			<div class="columns-2 pb-4">
+				<a href={post.url}>
+					<img src={post.frontmatter.image}>
+					<div class="sectionh">{post.frontmatter.title}</div>
+					<div class="sectionb">
+						<p class="font-bold pb-2">{post.frontmatter.date.month} {post.frontmatter.date.day}, {post.frontmatter.date.year}</p>
+						<p class="text-sm">{post.frontmatter.place}</p>
+                	</div> 
+				</a>
+			</div>)}
+	</div>
+
+</BaseLayout>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
+const allFilms = Object.values(import.meta.glob('./films/*.md', { eager: true }));
+const pageTitle = "Siriraj Motion Picture Club";
+---
+<BaseLayout pageTitle={pageTitle}>
+	
+	<!-- banner -->
+	<div class="w-full h-(--banner-height-sm) md:h-(--banner-height) bg-[url(../banner.jpg)] bg-cover bg-center mb-8"></div>
+
+
+	<!-- upcoming -->
+	<section>
+		<div class="flex flex-row">
+			<div class="sectionh">Recent Projects</div>
+			<div class="grow inline text-right">
+				<a class="link" href="/projects">
+					see all projects
+					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+						<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="sectionb">
+			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
+				{allProjects.reverse().slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image}></a></div>)}
+			</div>
+			<div class="w-full text-center text-sm text-zinc-500 pt-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
+				scroll to see more
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+			</div>
+		</div>
+	</section>
+
+	<!-- films -->
+	<section>
+		<div class="flex flex-row">
+			<div class="sectionh">Recent Films</div>
+			<div class="grow inline text-right">
+				<a class="link" href="/films">
+					see all films 
+					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+						<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="sectionb">
+			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
+				{allFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image}></a></div>)}
+			</div>
+			<div class="w-full text-center text-sm text-zinc-500 pt-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
+				scroll to see more
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+			</div>
+		</div>
+	</section>
+
+</BaseLayout>
