@@ -15,7 +15,7 @@ runtime:
     min: 2
     sec: 4
 watchlink: 'https://www.youtube.com/watch?v=PQcL3TxiWv0'
-image: ../films/2024-artspace.png
+image: ../2024/2024-artspace.png
 ---
 
 ### Synopsis
