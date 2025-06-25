@@ -1,8 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
-const allFilms = Object.values(import.meta.glob('./films/*.md', { eager: true }));
 const pageTitle = "Siriraj Motion Picture Club";
+
+import { getCollection } from 'astro:content';
+const allFilms = await getCollection('films');
+const allProjects = await getCollection('projects');
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
@@ -25,7 +28,7 @@ const pageTitle = "Siriraj Motion Picture Club";
 		</div>
 		<div class="sectionb">
 			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
-				{allProjects.reverse().slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image.index}></a></div>)}
+				{allProjects.reverse().slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={`/projects/${post.id}`}><Image src={post.data.cover} alt=""/></a></div>)}
 			</div>
 			<div class="w-full text-center text-sm text-zinc-500 pt-2">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
@@ -50,7 +53,7 @@ const pageTitle = "Siriraj Motion Picture Club";
 		</div>
 		<div class="sectionb">
 			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
-				{allFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image.index}></a></div>)}
+				{allFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={`/films/${post.id}`}><Image src={post.data.cover} alt=""/></a></div>)}
 			</div>
 			<div class="w-full text-center text-sm text-zinc-500 pt-2">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>

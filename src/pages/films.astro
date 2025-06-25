@@ -1,25 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const allFilms = Object.values(import.meta.glob('./films/*.md', { eager: true }));
 const pageTitle = "Films - Siriraj Motion Picture Club";
+
+import { getCollection } from 'astro:content';
+const allFilms = await getCollection('films');
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
 	<div class ="pagetitle">FILMS</div>
 
-	<div class="columns-1 lg:columns-2 2xl:columns-3 gap-4">
+	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
 		{allFilms.reverse().map((post: any) => 
-			<div class="columns-2 pb-4">
-				<a href={post.url}>
-					<img src={post.frontmatter.image}>
-					<div class="sectionh">{post.frontmatter.title}</div>
-					<div class="sectionb">
-						<p class="font-bold pb-2">{post.frontmatter.date.month} {post.frontmatter.date.day}, {post.frontmatter.date.year}</p>
-						<p class="text-sm">Runtime {post.frontmatter.runtime.hour} h {post.frontmatter.runtime.min} m {post.frontmatter.runtime.sec} s<br>
-						{post.frontmatter.genre}</p>
-                	</div> 
-				</a>
-			</div>)}
+			<a href={`/films/${post.id}`}>
+				<div class="grid grid-cols-1 md:grid-cols-2 pb-4">
+					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
+					<div>
+						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
+						<div class="sectionb md:border-l-0">
+							<p class="font-bold pb-2">{post.data.date}</p>
+							<p class="text-sm">Runtime {post.data.runtimehour} h {post.data.runtimemin} m {post.data.runtimesec} s<br>
+							{post.data.genre}</p>
+						</div> 
+					</div>
+				</div>
+			</a>)}
 	</div>
 
 </BaseLayout>

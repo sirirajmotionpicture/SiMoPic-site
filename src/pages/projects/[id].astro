@@ -1,18 +1,33 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const { frontmatter } = Astro.props;
+
+import { getCollection, render } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('projects');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
+<BaseLayout pageTitle={post.data.title}>
 
     <a href="../projects"><div class ="pagecat">PROJECT</div></a>
-    <div class = "pagetitle">{frontmatter.title}</div>
+    <div class = "pagetitle">{post.data.title}</div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4">
 
         <div class="col-span-1">
             <div class="border-zinc-400 border-1 mb-4">
-                <img src={frontmatter.image}/>
+                <Image src={post.data.cover} alt=""/>
             </div>
 
             <div class="2xl:hidden">
@@ -21,19 +36,19 @@ const { frontmatter } = Astro.props;
                 <div class="sectionb">
                     <div class="grid grid-cols-4">
                         <div class="col-span-1"><b>Date</b></div>
-                        <div class="col-span-3">{frontmatter.date} {frontmatter.time}</div>
+                        <div class="col-span-3">{post.data.datefrom} {post.data.timefrom} ～ {post.data.dateto} {post.data.timeto}</div>
                         <div class="col-span-1"><b>Location</b></div>
-                        <div class="col-span-3">{frontmatter.place}</div>
+                        <div class="col-span-3">{post.data.place}</div>
                         <div class="col-span-1"><b>Register</b></div>
-                        <div class="col-span-3">{frontmatter.regis.from} ～ {frontmatter.regis.to}</div>
+                        <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
                     </div>      
                 </div>
-                <a href= {frontmatter.regislink} class=""><div class="button w-full">📮Register here</div></a>    
+                <a href= {post.data.regislink} class=""><div class="button w-full">📮Register here</div></a>    
             </div>
         </div>
 
         <div class="col-span-2 px-0 md:px-8">
-            <slot />
+            <Content />
         </div>
 
         <div class="col-span-1 hidden 2xl:inline">
@@ -43,16 +58,15 @@ const { frontmatter } = Astro.props;
             <div class="sectionb">
                 <div class="grid grid-cols-4">
                     <div class="col-span-1"><b>Date</b></div>
-                        <div class="col-span-3">{frontmatter.date} {frontmatter.time}</div>
-                        <div class="col-span-1"><b>Location</b></div>
-                        <div class="col-span-3">{frontmatter.place}</div>
-                        <div class="col-span-1"><b>Register</b></div>
-                        <div class="col-span-3">{frontmatter.regis.from} ～ {frontmatter.regis.to}
-                    </div>
+                    <div class="col-span-3">{post.data.datefrom} {post.data.timefrom} ～ {post.data.dateto} {post.data.timeto}</div>
+                    <div class="col-span-1"><b>Location</b></div>
+                    <div class="col-span-3">{post.data.place}</div>
+                    <div class="col-span-1"><b>Register</b></div>
+                    <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
                 </div> 
             </div>
 
-            <a href= {frontmatter.regislink} class=""><div class="button w-full">📮Register here</div></a>
+            <a href= {post.data.regislink} class=""><div class="button w-full">📮Register here</div></a>
         </div>
 
     </div>
