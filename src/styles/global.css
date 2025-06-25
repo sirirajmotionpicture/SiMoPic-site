@@ -16,7 +16,7 @@
 @theme {
     --font-default: "Inter", "Anuphan", sans-serif;
     --banner-height: calc(95.5svh - (var(--spacing) * 20.5));
-    --banner-height-sm: calc(95.5svh - (var(--spacing) * 32));
+    --banner-height-sm: calc(95.5svh - (var(--spacing) * 26));
 }
 
 body {
