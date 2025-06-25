@@ -12,9 +12,9 @@ const pageTitle = "Siriraj Motion Picture Club";
 
 	<!-- upcoming -->
 	<section>
-		<div class="flex flex-row">
+		<div class="flex flex-row place-items-end">
 			<div class="sectionh">Recent Projects</div>
-			<div class="grow inline text-right">
+			<div class="grow inline text-right text-sm pb-1">
 				<a class="link" href="/projects">
 					see all projects
 					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
@@ -25,7 +25,7 @@ const pageTitle = "Siriraj Motion Picture Club";
 		</div>
 		<div class="sectionb">
 			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
-				{allProjects.reverse().slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image}></a></div>)}
+				{allProjects.reverse().slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image.index}></a></div>)}
 			</div>
 			<div class="w-full text-center text-sm text-zinc-500 pt-2">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
@@ -35,11 +35,11 @@ const pageTitle = "Siriraj Motion Picture Club";
 		</div>
 	</section>
 
-	<!-- films -->
+	<!-- films --> 
 	<section>
-		<div class="flex flex-row">
+		<div class="flex flex-row place-items-end">
 			<div class="sectionh">Recent Films</div>
-			<div class="grow inline text-right">
+			<div class="grow inline text-right text-sm pb-1">
 				<a class="link" href="/films">
 					see all films 
 					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
@@ -50,7 +50,7 @@ const pageTitle = "Siriraj Motion Picture Club";
 		</div>
 		<div class="sectionb">
 			<div class="flex items-center gap-x-4 overflow-x-scroll touch-pan-x snap-x">
-				{allFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image}></a></div>)}
+				{allFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={post.url}><img src={post.frontmatter.image.index}></a></div>)}
 			</div>
 			<div class="w-full text-center text-sm text-zinc-500 pt-2">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>

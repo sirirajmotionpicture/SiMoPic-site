@@ -21,11 +21,11 @@ const { frontmatter } = Astro.props;
                 <div class="sectionb">
                     <div class="grid grid-cols-4">
                         <div class="col-span-1"><b>Date</b></div>
-                        <div class="col-span-3">{frontmatter.date.month} {frontmatter.date.day}, {frontmatter.date.year}</div>
+                        <div class="col-span-3">{frontmatter.date} {frontmatter.time}</div>
                         <div class="col-span-1"><b>Location</b></div>
                         <div class="col-span-3">{frontmatter.place}</div>
                         <div class="col-span-1"><b>Register</b></div>
-                        <div class="col-span-3">{frontmatter.regisopen.month} {frontmatter.regisopen.day}, {frontmatter.regisopen.year} ～ {frontmatter.regisclose.month} {frontmatter.regisclose.day}, {frontmatter.regisclose.year}</div>
+                        <div class="col-span-3">{frontmatter.regis.from} ～ {frontmatter.regis.to}</div>
                     </div>      
                 </div>
                 <a href= {frontmatter.regislink} class=""><div class="button w-full">📮Register here</div></a>    
@@ -43,11 +43,12 @@ const { frontmatter } = Astro.props;
             <div class="sectionb">
                 <div class="grid grid-cols-4">
                     <div class="col-span-1"><b>Date</b></div>
-                    <div class="col-span-3">{frontmatter.date.month} {frontmatter.date.day}, {frontmatter.date.year}</div>
-                    <div class="col-span-1"><b>Location</b></div>
-                    <div class="col-span-3">{frontmatter.place}</div>
-                    <div class="col-span-1"><b>Register</b></div>
-                    <div class="col-span-3">{frontmatter.regisopen.month} {frontmatter.regisopen.day}, {frontmatter.regisopen.year} ～ {frontmatter.regisclose.month} {frontmatter.regisclose.day}, {frontmatter.regisclose.year}</div>
+                        <div class="col-span-3">{frontmatter.date} {frontmatter.time}</div>
+                        <div class="col-span-1"><b>Location</b></div>
+                        <div class="col-span-3">{frontmatter.place}</div>
+                        <div class="col-span-1"><b>Register</b></div>
+                        <div class="col-span-3">{frontmatter.regis.from} ～ {frontmatter.regis.to}
+                    </div>
                 </div> 
             </div>
 

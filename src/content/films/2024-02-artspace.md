@@ -1,21 +1,15 @@
 ---
 layout: ../../layouts/FilmLayout.astro
 title: 'นภาเที่ยงคืน - หนังสั้น Art Space 2024'
-date: 
-    year: 2025
-    month: 'January'
-    day: 15
-    time: '17.00'
-project: 
-    name: 'เบิกฟ้าชมรม 2024'
-    link: ''
+date: 2025-01-15 17:00:00 +7
+projectname: 'เบิกฟ้าชมรม 2024'
+projectlink: 'https://www.youtube.com/watch?v=PQcL3TxiWv0'
 genre: ['Advert']
-runtime:
-    hour: 0
-    min: 2
-    sec: 4
+runtimeh: 0
+runtimem: 2
+runtimes: 4
 watchlink: 'https://www.youtube.com/watch?v=PQcL3TxiWv0'
-image: ../2024/2024-artspace.png
+cover: ../../assets/films/2024/2024-artspace.png
 ---
 
 ### Synopsis
