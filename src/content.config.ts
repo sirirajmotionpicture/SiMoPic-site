@@ -2,7 +2,7 @@
 import { defineCollection, z } from 'astro:content';
 
 // 2. Import loader(s)
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 
 // 3. Define your collection(s)
 const filmsCollection = defineCollection({
@@ -21,7 +21,7 @@ const filmsCollection = defineCollection({
             watchlink: z.string(),
             cover: image(),
         })
-})
+});
 
 const projectsCollection = defineCollection({
     loader: glob({ pattern:"*.md", base: "./src/content/projects" }),
@@ -38,10 +38,23 @@ const projectsCollection = defineCollection({
             regislink: z.string(),
             cover: image(),
         }) 
-})
+});
+
+const teamCollection = defineCollection({
+    loader: file("./src/content/team/team.json", { parser: (text) => JSON.parse(text).team } ),
+    schema: z.object({
+        ay: z.number(),
+        nickname: z.string(),
+        name: z.string(),
+        si: z.number(),
+        line: z.number(),
+        position: z.string()
+    })
+});
 
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = { 
     films: filmsCollection,
-    projects: projectsCollection
+    projects: projectsCollection,
+    team: teamCollection
 };

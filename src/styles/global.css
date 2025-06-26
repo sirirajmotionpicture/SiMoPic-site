@@ -67,3 +67,8 @@ hr {
 .button {
     @apply p-2 mb-4 font-bold text-zinc-950 bg-zinc-300
 }
+/* Group */
+
+.grouping {
+    @apply border-b-1 border-zinc-400 mb-4 pb-4
+}

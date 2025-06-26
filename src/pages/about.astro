@@ -1,7 +1,22 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "About - Siriraj Motion Picture Club";
+
+const d = new Date();
+let month = d.getMonth();
+let year = d.getFullYear();
+var ay = year
+if (month <= 3) {
+	var ay = year - 1;
+};
+
+import { getCollection } from 'astro:content';
+const latestTeam = await getCollection('team', ({ data }) => {
+	return data.ay == ay;
+});
+const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !== ay;})).sort((a, b) => b.data.ay.valueOf() - a.data.ay.valueOf(),);
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
@@ -20,8 +35,15 @@ const pageTitle = "About - Siriraj Motion Picture Club";
 		<div class="sectionh">
 			<p>Our Team</p>
 		</div>
-		<div class="sectionb">
-			
+		<div class="sectionb grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+			{latestTeam.map((post: any) => 
+			<div class="grid grid-rows-2">
+				<div class="">test</div>
+				<div class="">
+					<div class="sectionh">{post.data.nickname}</div>
+					<div class="sectionb text-sm">{post.data.name}<br><span class="text-xs">SI{post.data.si} {post.data.line}</span><br><span class="font-bold">{post.data.position}</span></div>
+				</div>
+			</div>)}
 		</div>
 	</section>
 
@@ -31,7 +53,30 @@ const pageTitle = "About - Siriraj Motion Picture Club";
 			<p>Alumni</p>
 		</div>
 		<div class="sectionb">
-			
+			<script>
+				var groups = {};
+				$('.alumni').each(function () { 
+					var className = this.getAttribute("alumni-ay"),
+					$group = groups[className];
+					if (!$group) {
+						$group = $('<div />', {
+							'class': 'grouping grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4'
+						}).insertAfter(this);
+						groups[className] = $group;
+					}
+					$group.append(this);
+				})
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			{alumniTeam.map((post: any) => <div class="alumni" alumni-ay={post.data.ay}>
+				<div class="grid grid-rows-2">
+				<div class="">test</div>
+				<div class="">
+					<div class="sectionh">{post.data.nickname}</div>
+					<div class="sectionb text-sm">{post.data.name}<br><span class="text-xs">SI{post.data.si} {post.data.line}</span><br><span class="font-bold">{post.data.position}</span></div>
+				</div>
+			</div>
+			</div>)}
 		</div>
 	</section>
 
