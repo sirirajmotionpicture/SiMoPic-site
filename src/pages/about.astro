@@ -17,6 +17,9 @@ const latestTeam = await getCollection('team', ({ data }) => {
 	return data.ay == ay;
 });
 const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !== ay;})).sort((a, b) => b.data.ay.valueOf() - a.data.ay.valueOf(),);
+
+import Content from '../content/about.md';
+import contentImg from '../content/about.jpg';
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
@@ -25,8 +28,9 @@ const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !=
 		<div class="sectionh">
 			<p>Who Are We?</p>
 		</div>
-		<div class="sectionb">
-
+		<div class="sectionb grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+			<div class="col-span-1 lg:col-span-2 pb-4 md:pb-0 pr-0 md:pr-4"><article><Content /></article></div>
+			<div><Image alt="" src={contentImg}  /></div>
 		</div>
 	</section>
 
@@ -37,11 +41,11 @@ const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !=
 		</div>
 		<div class="sectionb grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
 			{latestTeam.map((post: any) => 
-			<div class="grid grid-rows-2">
-				<div class="">test</div>
+			<div class="flex flex-col">
+				<div class=""><Image src={post.data.cover} alt="" /></div>
 				<div class="">
-					<div class="sectionh">{post.data.nickname}</div>
-					<div class="sectionb text-sm">{post.data.name}<br><span class="text-xs">SI{post.data.si} {post.data.line}</span><br><span class="font-bold">{post.data.position}</span></div>
+					<div class="nameh">{post.data.nickname}</div>
+					<div class="nameb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}</span></div>
 				</div>
 			</div>)}
 		</div>
@@ -60,7 +64,7 @@ const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !=
 					$group = groups[className];
 					if (!$group) {
 						$group = $('<div />', {
-							'class': 'grouping grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4'
+							'class': 'grouping grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4'
 						}).insertAfter(this);
 						groups[className] = $group;
 					}
@@ -69,11 +73,11 @@ const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !=
 			</script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			{alumniTeam.map((post: any) => <div class="alumni" alumni-ay={post.data.ay}>
-				<div class="grid grid-rows-2">
-				<div class="">test</div>
+				<div class="flex flex-col">
+				<div class=""><Image src={post.data.cover} alt="" /></div>
 				<div class="">
-					<div class="sectionh">{post.data.nickname}</div>
-					<div class="sectionb text-sm">{post.data.name}<br><span class="text-xs">SI{post.data.si} {post.data.line}</span><br><span class="font-bold">{post.data.position}</span></div>
+					<div class="alumh">{post.data.nickname}</div>
+					<div class="alumb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}, {post.data.ay}</span></div>
 				</div>
 			</div>
 			</div>)}

@@ -42,13 +42,14 @@ const projectsCollection = defineCollection({
 
 const teamCollection = defineCollection({
     loader: file("./src/content/team/team.json", { parser: (text) => JSON.parse(text).team } ),
-    schema: z.object({
+    schema: ({ image }) => z.object({
         ay: z.number(),
         nickname: z.string(),
         name: z.string(),
         si: z.number(),
         line: z.number(),
-        position: z.string()
+        position: z.string(),
+        cover: image()
     })
 });
 
