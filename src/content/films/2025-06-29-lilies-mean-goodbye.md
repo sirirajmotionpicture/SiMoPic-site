@@ -1,9 +1,9 @@
 ---
 title: Lilies Mean Goodbye
-date: "'2025-03-28'"
-time: "''"
+date: 2025-03-28
+time: ''
 projectname: Senior Farewell 2025
-projectlink: "''"
+projectlink: ''
 genre:
   - Drama
 runtimehour: 0
@@ -15,7 +15,7 @@ cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
 ---
 ### Synopsis
 
-*   \- -
+- - -
     
 
 ### Trailer
@@ -24,9 +24,9 @@ cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
 
 ### Cast
 
-*   \- -
+- - -
     
 
 ### Crew
 
-*   \- -
+- - -

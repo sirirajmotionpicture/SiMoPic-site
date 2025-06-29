@@ -15,11 +15,11 @@ const allProjects = (await getCollection('projects')).sort(
 	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
 		{allProjects.map((post: any) => 
 			<a href={`/projects/${post.id}`}>
-				<div class="grid grid-cols-1 md:grid-cols-2 pb-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 pb-0">
 					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
 					<div>
 						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
-						<div class="sectionb md:border-l-0">
+						<div class="sectionbnm md:border-l-0">
 							<p class="font-bold pb-2">{post.data.datefrom.toUTCString().slice(0,16)} {post.data.timefrom} - {post.data.dateto} {post.data.timeto}</p>
 							<p class="text-sm">{post.data.place}<br>
 							Register from {post.data.regisfrom} - {post.data.registo}</p>

@@ -56,7 +56,9 @@ hr {
     @apply p-4 mb-4 border-1 border-zinc-400 
 }
 
-
+.sectionbnm {
+    @apply p-4 border-1 border-zinc-400 
+}
 
 /* Links */
 

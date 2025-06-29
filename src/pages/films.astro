@@ -15,11 +15,11 @@ const allFilms = (await getCollection('films')).sort(
 	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
 		{allFilms.map((post: any) => 
 			<a href={`/films/${post.id}`}>
-				<div class="grid grid-cols-1 md:grid-cols-2 pb-4">
+				<div class="grid grid-cols-1 md:grid-cols-2">
 					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
 					<div>
 						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
-						<div class="sectionb md:border-l-0">
+						<div class="sectionbnm md:border-l-0">
 							<p class="font-bold pb-2">{post.data.date.toUTCString().slice(0,16)}</p>
 							<p class="text-sm">Runtime {post.data.runtimehour} h {post.data.runtimemin} m {post.data.runtimesec} s<br>
 							{post.data.genre}</p>
