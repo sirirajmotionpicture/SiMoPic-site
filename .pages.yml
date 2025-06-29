@@ -3,7 +3,55 @@ content:
    label: Films
    path: src/content/films
    type: collection
+   view: 
+     fields: 
    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: 1st Screening Date
+        type: string
+      - name: time
+        label: Time of Screening
+        type: string
+      - name: projectname
+        label: Assoc. Project
+        type: string
+      - name: projectlink
+        label: Link to Project
+        type: string
+      - name: genre
+        label: Genre
+        type: select
+        options:
+          multiple: true
+          values: [Advert, Drama, Comedy, Thriller, Video Art, Other]
+      - name: runtimehour
+        label: Runtime (h)
+        type: number
+      - name: runtimemin
+        label: Runtime (m)
+        type: number
+        options:
+          max: 60
+      - name: runtimesec
+        label: Runtime (s)
+        type: number
+        options:
+          max: 60
+      - name: watchlink
+        label: Video Link
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: slug
+        label: Page ID
+        type: string
+        description: ID of each page. Must be in 'YYYY-title' pattern (e.g., 2024-artspace)
+      - name: cover
+        label: Poster
+        type: image
+     
  - name: projects
    label: Projects
    path: src/content/projects
