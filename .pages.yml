@@ -3,8 +3,8 @@ content:
    label: Films
    path: src/content/films
    type: collection
-   view: 
-     fields: 
+   view:
+      fields: [title, date]
    fields:
       - name: title
         label: Title
@@ -52,14 +52,108 @@ content:
       - name: cover
         label: Poster
         type: image
-     
+      - name: body
+        label: Body
+        type: rich-text
  - name: projects
    label: Projects
    path: src/content/projects
    type: collection
+   view:
+      fields: [title, datefrom]
    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: datefrom
+        label: Date of Activity (from)
+        type: string
+        description: must be in 'yyyy-mm-dd' format
+      - name: time
+        label: Time of Activity (from)
+        type: string
+      - name: dateto
+        label: Date of Activity (to)
+        type: string
+        description: must be in 'yyyy-mm-dd' format
+      - name: timeto
+        label: Time of Activity (to)
+        type: string
+      - name: place
+        label: Location
+        type: string
+      - name: regisfrom
+        label: Registration Period (from)
+        type: string
+      - name: registo
+        label: Registration Period (to)
+        type: string
+      - name: regislink
+        label: Registration Link
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: slug
+        label: Page ID
+        type: string
+        description: ID of each page. Must be in 'YYYY-title' pattern (e.g., 2024-artspace)
+      - name: cover
+        label: Cover Image
+        type: image
+      - name: body
+        label: Body
+        type: rich-text
  - name: team
    label: Team
    path: src/content/team/team.json
    type: file
-  
+   view: 
+     fields: [nickname, name, position, id]
+   fields:
+      - name: ay
+        label: Academic Year
+        description: in ค.ศ.
+        type: number
+        options:
+          min: 2023
+          max: 2100
+      - name: nickname
+        label: Nickname
+        type: string
+      - name: name
+        label: Name
+        type: string
+      - name: si
+        label: SI รุ่น
+        type: number
+        options:
+          min: 132
+          max: 200
+      - name: line
+        label: สายรหัส
+        type: string
+        pattern: ^[0-9][0-9][0-9]$
+        options:
+          minlength: 3
+          maxlength: 3
+      - name: position
+        label: Position
+        type: string
+      - name: cover
+        label: Cover Image
+        type: image
+      - name: id
+        label: ID
+        type: string
+        pattern: ^[2][0-9]/-/[0-9][0-9]$
+        description: use 'yy-no' pattern (e.g., 24-1), MUST be unique
+ - name: about
+   label: About Page
+   path: src/content/about.md
+   type: file
+   fields:
+      - name: body
+        label: Body
+        type: rich-text
+
+media:
+- 
