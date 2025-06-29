@@ -107,7 +107,7 @@ content:
    path: src/content/team/team.json
    type: file
    fields:
-      - name: links
+      - name: team
         type: object
         list: true
         fields:
