@@ -159,15 +159,15 @@ media:
 - name: filmcover
   label: Films (Image)
   input: src/assets/films
-  output: asstes/films
+  output: src/asstes/films
   extensions: [png, jpeg, jpg]
 - name: projectcover
   label: Projects (Image)
   input: src/assets/projects
-  output: asstes/projects
+  output: src/asstes/projects
   extensions: [png, jpeg, jpg]
 - name: teamimage
   label: Team (Image)
   input: src/content/team
-  output: content/team
+  output: src/content/team
   extensions: [png, jpeg, jpg]
