@@ -164,3 +164,7 @@ media:
   label: Projects (Image)
   input: src/assets/projects
   output: asstes/projects
+- name: teamimage
+  label: Team (Image)
+  input: src/content/team
+  output: content/team
