@@ -11,7 +11,7 @@ content:
         type: string
       - name: date
         label: 1st Screening Date
-        type: string
+        type: date
         description: must be in 'yyyy-mm-dd' format
       - name: time
         label: Time of Screening
@@ -67,7 +67,7 @@ content:
         type: string
       - name: datefrom
         label: Date of Activity (from)
-        type: string
+        type: date
         description: must be in 'yyyy-mm-dd' format
       - name: time
         label: Time of Activity (from)
