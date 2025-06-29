@@ -12,6 +12,7 @@ content:
       - name: date
         label: 1st Screening Date
         type: string
+        description: must be in 'yyyy-mm-dd' format
       - name: time
         label: Time of Screening
         type: string
