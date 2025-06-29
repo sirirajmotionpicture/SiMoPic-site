@@ -11,7 +11,7 @@ runtimemin: 3
 runtimesec: 21
 watchlink: https://youtu.be/baQGU6W6lIA
 slug: 2025-lilies-mean-goodbye
-cover: ../../asstes/films/Screenshot_20250629_115300_Instagram.jpg
+cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
 ---
 ### Synopsis
 
