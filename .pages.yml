@@ -157,5 +157,10 @@ content:
 
 media:
 - name: filmcover
+  label: Films (Image)
   input: src/assets/films
   output: asstes/films
+- name: projectcover
+  label: Projects (Image)
+  input: src/assets/projects
+  output: asstes/projects
