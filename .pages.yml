@@ -1,0 +1,16 @@
+content:
+ - name: films
+   label: Films
+   path: src/content/films
+   type: collection
+   fields:
+ - name: projects
+   label: Projects
+   path: src/content/projects
+   type: collection
+   fields:
+ - name: team
+   label: Team
+   path: src/content/team/team.json
+   type: file
+  
