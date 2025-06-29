@@ -1,7 +1,6 @@
 ---
 title: Lilies Mean Goodbye
 date: 2025-02-28
-time: "''"
 projectname: Senior Farewell 2025
 projectlink: "''"
 genre:
