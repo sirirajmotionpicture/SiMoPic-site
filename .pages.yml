@@ -105,47 +105,49 @@ content:
  - name: team
    label: Team
    path: src/content/team/team.json
-   type: collection
-   view: 
-     fields: [nickname, name, position, id]
+   type: file
    fields:
-      - name: ay
-        label: Academic Year
-        description: in ค.ศ.
-        type: number
-        options:
-          min: 2023
-          max: 2100
-      - name: nickname
-        label: Nickname
-        type: string
-      - name: name
-        label: Name
-        type: string
-      - name: si
-        label: SI รุ่น
-        type: number
-        options:
-          min: 132
-          max: 200
-      - name: line
-        label: สายรหัส
-        type: string
-        pattern: ^[0-9][0-9][0-9]$
-        options:
-          minlength: 3
-          maxlength: 3
-      - name: position
-        label: Position
-        type: string
-      - name: cover
-        label: Cover Image
-        type: image
-      - name: id
-        label: ID
-        type: string
-        pattern: ^[2][0-9]/-/[0-9][0-9]$
-        description: use 'yy-no' pattern (e.g., 24-1), MUST be unique
+      - name: links
+        type: object
+        list: true
+        fields:
+        - name: ay
+          label: Academic Year
+          description: in ค.ศ.
+          type: number
+          options:
+            min: 2023
+            max: 2100
+        - name: nickname
+          label: Nickname
+          type: string
+        - name: name
+          label: Name
+          type: string
+        - name: si
+          label: SI รุ่น
+          type: number
+          options:
+            min: 132
+            max: 200
+        - name: line
+          label: สายรหัส
+          type: string
+          pattern: ^[0-9][0-9][0-9]$
+          options:
+            minlength: 3
+            maxlength: 3
+        - name: position
+          label: Position
+          type: string
+        - name: cover
+          label: Cover Image
+          type: image
+        - name: id
+          label: ID
+          type: string
+          pattern: ^[2][0-9]/-/[0-9][0-9]$
+          description: use 'yy-no' pattern (e.g., 24-1), MUST be unique
  - name: about
    label: About Page
    path: src/content/about.md
