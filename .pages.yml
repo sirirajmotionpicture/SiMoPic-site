@@ -154,6 +154,3 @@ content:
       - name: body
         label: Body
         type: rich-text
-
-media:
-- 
