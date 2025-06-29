@@ -154,3 +154,8 @@ content:
       - name: body
         label: Body
         type: rich-text
+
+media:
+- name: filmcover
+  input: src/assets/films
+  output: asstes/films
