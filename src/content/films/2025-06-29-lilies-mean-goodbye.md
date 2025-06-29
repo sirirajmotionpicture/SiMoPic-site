@@ -1,7 +1,6 @@
 ---
 title: Lilies Mean Goodbye
 date: 2025-03-28
-time: ''
 projectname: Senior Farewell 2025
 projectlink: ''
 genre:
@@ -19,8 +18,6 @@ cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
     
 
 ### Trailer
-
-<iframe width="1440" height="810" src="[https://www.youtube.com/embed/baQGU6W6lIA](https://www.youtube.com/embed/baQGU6W6lIA)" title="หนังสั้น Lilies mean goodbye" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Cast
 
