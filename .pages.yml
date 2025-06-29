@@ -105,7 +105,7 @@ content:
  - name: team
    label: Team
    path: src/content/team/team.json
-   type: file
+   type: collection
    view: 
      fields: [nickname, name, position, id]
    fields:
