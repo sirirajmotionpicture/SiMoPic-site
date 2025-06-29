@@ -5,10 +5,10 @@ const pageTitle = "Siriraj Motion Picture Club";
 
 import { getCollection } from 'astro:content';
 const allFilms = (await getCollection('films')).sort(
-  (a, b) => b.data.date.localeCompare(a.data.date)
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 const allProjects = (await getCollection('projects')).sort(
-  (a, b) => b.data.datefrom.localeCompare(a.data.datefrom)
+  (a, b) => b.data.datefrom.valueOf() - a.data.datefrom.valueOf(),
 );
 ---
 <BaseLayout pageTitle={pageTitle}>

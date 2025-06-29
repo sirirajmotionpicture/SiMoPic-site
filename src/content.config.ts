@@ -3,6 +3,7 @@ import { defineCollection, z } from 'astro:content';
 
 // 2. Import loader(s)
 import { glob, file } from 'astro/loaders';
+import { optional } from 'astro:schema';
 
 // 3. Define your collection(s)
 const filmsCollection = defineCollection({
@@ -10,15 +11,15 @@ const filmsCollection = defineCollection({
     schema: 
         ({ image }) => z.object({
             title: z.string(),
-            date: z.string(),
-            time: z.string(),
-            projectname: z.string(),
-            projectlink: z.string(),
-            genre: z.array(z.string()),
-            runtimehour: z.number(),
-            runtimemin: z.number(),
-            runtimesec: z.number(),
-            watchlink: z.string(),
+            date: z.date().optional(),
+            time: z.string().optional(),
+            projectname: z.string().optional(),
+            projectlink: z.string().optional(),
+            genre: z.array(z.string()).optional(),
+            runtimehour: z.number().optional(),
+            runtimemin: z.number().optional(),
+            runtimesec: z.number().optional(),
+            watchlink: z.string().optional(),
             cover: image(),
         })
 });
@@ -28,14 +29,14 @@ const projectsCollection = defineCollection({
     schema: 
         ({ image }) => z.object({
             title: z.string(),
-            datefrom: z.string(),
-            timefrom: z.string(),
-            dateto: z.string(),
-            timeto: z.string(),
+            datefrom: z.date(),
+            timefrom: z.string().optional(),
+            dateto: z.string().optional(),
+            timeto: z.string().optional(),
             place: z.string(),
-            regisfrom: z.string(),
-            registo: z.string(),
-            regislink: z.string(),
+            regisfrom: z.string().optional(),
+            registo: z.string().optional(),
+            regislink: z.string().optional(),
             cover: image(),
         }) 
 });

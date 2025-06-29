@@ -5,7 +5,7 @@ const pageTitle = "Projects - Siriraj Motion Picture Club";
 
 import { getCollection } from 'astro:content';
 const allProjects = (await getCollection('projects')).sort(
-  (a, b) => b.data.datefrom.localeCompare(a.data.datefrom)
+  (a, b) => b.data.datefrom.valueOf() - a.data.datefrom.valueOf(),
 );
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -20,7 +20,7 @@ const allProjects = (await getCollection('projects')).sort(
 					<div>
 						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
 						<div class="sectionb md:border-l-0">
-							<p class="font-bold pb-2">{post.data.datefrom} {post.data.timefrom} - {post.data.dateto} {post.data.timeto}</p>
+							<p class="font-bold pb-2">{post.data.datefrom.toUTCString().slice(0,16)} {post.data.timefrom} - {post.data.dateto} {post.data.timeto}</p>
 							<p class="text-sm">{post.data.place}<br>
 							Register from {post.data.regisfrom} - {post.data.registo}</p>
 						</div> 

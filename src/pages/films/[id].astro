@@ -36,7 +36,7 @@ const { Content } = await render(post);
                 <div class="sectionb">
                     <div class="grid grid-cols-4">
                         <div class="col-span-1"><b>Date</b></div>
-                        <div class="col-span-3">{post.data.date} {post.data.time}</div>
+                        <div class="col-span-3">{post.data.date.toUTCString().slice(0,16)} {post.data.time}</div>
                         <div class="col-span-1"><b>Project</b></div>
                         <div class="col-span-3"><a href={post.data.projectlink}>{post.data.projectname}</a></div>
                         <div class="col-span-1"><b>Genre</b></div>
@@ -60,7 +60,7 @@ const { Content } = await render(post);
             <div class="sectionb">
                 <div class="grid grid-cols-4">
                     <div class="col-span-1"><b>Date</b></div>
-                    <div class="col-span-3">{post.data.date} {post.data.time}</div>
+                    <div class="col-span-3">{post.data.date.toUTCString().slice(0,16)} {post.data.time}</div>
                     <div class="col-span-1"><b>Project</b></div>
                     <div class="col-span-3"><a href={post.data.projectlink}>{post.data.projectname}</a></div>
                     <div class="col-span-1"><b>Genre</b></div>
