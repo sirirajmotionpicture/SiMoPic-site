@@ -1,21 +1,21 @@
 {
     "team" : [
-        {"ay": 2024, "nickname": "แอนนี่", "name": "กนกรดา แซ่โซว", "si": 132, "line":33 , "position": "President", "cover": "./mock.jpg", "id": "24-1"},
-        {"ay": 2024, "nickname": "ณ", "name": "ณัธวรรธ เมืองแก้ว", "si": 133, "line":108 , "position": "Vice President", "cover": "./mock.jpg", "id": "24-2"},
-        {"ay": 2024, "nickname": "โย", "name": "ปราชญา อินทรา", "si": 132, "line":162, "position": "Secretary", "cover": "./mock.jpg", "id": "24-3"},
-        {"ay": 2024, "nickname": "อู๋", "name": "ธนาธิป เชื้ออินต๊ะ", "si": 132, "line":120, "position": "Treasury", "cover": "./mock.jpg", "id": "24-4"},
-        {"ay": 2024, "nickname": "ก้อง", "name": "วริศ ลัภนะฐิติ", "si": 132, "line":240, "position": "Head of PR", "cover": "./mock.jpg", "id": "24-5"},
-        {"ay": 2024, "nickname": "หวาย", "name": "นันทนัช จันทรรัตน์", "si": 132, "line":148, "position": "Head of Resources", "cover": "./mock.jpg", "id": "24-6"},
-        {"ay": 2024, "nickname": "นนนี่", "name": "นนทนีย์ โพธิ์วิเชียร", "si": 132, "line":142, "position": "Head of Resources", "cover": "./mock.jpg", "id": "24-7"},
-        {"ay": 2024, "nickname": "ภูริ", "name": "ภูริ", "si": 134, "line": 0, "position": "Core Team", "cover": "./mock.jpg", "id": "24-8"},
+        {"ay": 2024, "nickname": "แอนนี่", "name": "กนกรดา แซ่โซว", "si": 132, "line":"033" , "position": "President", "cover": "./mock.jpg", "id": "24-1"},
+        {"ay": 2024, "nickname": "ณ", "name": "ณัธวรรธ เมืองแก้ว", "si": 133, "line":"108" , "position": "Vice President", "cover": "./mock.jpg", "id": "24-2"},
+        {"ay": 2024, "nickname": "โย", "name": "ปราชญา อินทรา", "si": 132, "line":"162", "position": "Secretary", "cover": "./mock.jpg", "id": "24-3"},
+        {"ay": 2024, "nickname": "อู๋", "name": "ธนาธิป เชื้ออินต๊ะ", "si": 132, "line":"120", "position": "Treasury", "cover": "./mock.jpg", "id": "24-4"},
+        {"ay": 2024, "nickname": "ก้อง", "name": "วริศ ลัภนะฐิติ", "si": 132, "line":"240", "position": "Head of PR", "cover": "./mock.jpg", "id": "24-5"},
+        {"ay": 2024, "nickname": "หวาย", "name": "นันทนัช จันทรรัตน์", "si": 132, "line":"148", "position": "Head of Resources", "cover": "./mock.jpg", "id": "24-6"},
+        {"ay": 2024, "nickname": "นนนี่", "name": "นนทนีย์ โพธิ์วิเชียร", "si": 132, "line":"142", "position": "Head of Resources", "cover": "./mock.jpg", "id": "24-7"},
+        {"ay": 2024, "nickname": "ภูริ", "name": "ภูริ", "si": 134, "line": "0", "position": "Core Team", "cover": "./mock.jpg", "id": "24-8"},
         
-        {"ay": 2025, "nickname": "ณ", "name": "ณัธวรรธ เมืองแก้ว", "si": 133, "line":33, "position": "President", "cover": "./mock.jpg","id": "25-1"},
-        {"ay": 2025, "nickname": "แอนนี่", "name": "กนกรดา แซ่โซว", "si": 132, "line":108, "position": "Vice President","cover": "./mock.jpg", "id": "25-2"},
-        {"ay": 2025, "nickname": "หวาย", "name": "นันทนัช จันทรรัตน์", "si": 132, "line":148, "position": "Treasury", "cover": "./mock.jpg", "id": "25-3"},
-        {"ay": 2025, "nickname": "ก้อง", "name": "วริศ ลัภนะฐิติ", "si": 132, "line": 240, "position": "Head of PR", "cover": "./2025/25-4.jpg", "id": "25-4"},
-        {"ay": 2025, "nickname": "นนนี่", "name": "นนทนีย์ โพธิ์วิเชียร", "si": 132, "line":142, "position": "Head of Resources", "cover": "./mock.jpg", "id": "25-5"},
-        {"ay": 2025, "nickname": "Phuri", "name": "Phuri", "si": 134, "line": 0, "position": "Core Team", "cover": "./mock.jpg", "id": "25-6"},
+        {"ay": 2025, "nickname": "ณ", "name": "ณัธวรรธ เมืองแก้ว", "si": 133, "line":"108", "position": "President", "cover": "./mock.jpg","id": "25-1"},
+        {"ay": 2025, "nickname": "แอนนี่", "name": "กนกรดา แซ่โซว", "si": 132, "line":"033", "position": "Vice President","cover": "./mock.jpg", "id": "25-2"},
+        {"ay": 2025, "nickname": "หวาย", "name": "นันทนัช จันทรรัตน์", "si": 132, "line":"148", "position": "Treasury", "cover": "./mock.jpg", "id": "25-3"},
+        {"ay": 2025, "nickname": "ก้อง", "name": "วริศ ลัภนะฐิติ", "si": 132, "line": "240", "position": "Head of PR", "cover": "./2025/25-4.jpg", "id": "25-4"},
+        {"ay": 2025, "nickname": "นนนี่", "name": "นนทนีย์ โพธิ์วิเชียร", "si": 132, "line":"142", "position": "Head of Resources", "cover": "./mock.jpg", "id": "25-5"},
+        {"ay": 2025, "nickname": "Phuri", "name": "Phuri", "si": 134, "line": "0", "position": "Core Team", "cover": "./mock.jpg", "id": "25-6"},
 
-        {"ay": 2023, "nickname": "test", "name": "test", "si": 134, "line": 0, "position": "Core Team", "cover": "./mock.jpg", "id": "23-0"}
+        {"ay": 2023, "nickname": "test", "name": "test", "si": 134, "line": "0", "position": "Core Team", "cover": "./mock.jpg", "id": "23-0"}
     ]
 }

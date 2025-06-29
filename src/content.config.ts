@@ -47,7 +47,7 @@ const teamCollection = defineCollection({
         nickname: z.string(),
         name: z.string(),
         si: z.number(),
-        line: z.number(),
+        line: z.string(),
         position: z.string(),
         cover: image()
     })

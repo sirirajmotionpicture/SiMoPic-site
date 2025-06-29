@@ -4,14 +4,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Projects - Siriraj Motion Picture Club";
 
 import { getCollection } from 'astro:content';
-const allFilms = await getCollection('projects');
+const allProjects = (await getCollection('projects')).sort(
+  (a, b) => b.data.datefrom.localeCompare(a.data.datefrom)
+);
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
 	<div class ="pagetitle">PROJECTS</div>
 
 	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
-		{allFilms.reverse().map((post: any) => 
+		{allProjects.map((post: any) => 
 			<a href={`/projects/${post.id}`}>
 				<div class="grid grid-cols-1 md:grid-cols-2 pb-4">
 					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
