@@ -16,11 +16,17 @@ cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
 
 * * *
 
-### Trailer
+### Director's Cut
 
 * * *
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/baQGU6W6lIA" title="หนังสั้น Lilies mean goodbye" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="[https://www.youtube.com/embed/](https://www.youtube.com/embed/baQGU6W6lIA)[vW7La6Yk\_MQ](https://youtu.be/vW7La6Yk_MQ)" title="Lilies Mean Goodbye \[Director's Cut\] | หนังสั้น Senior Farewell 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Screen Version
+
+* * *
+
+<iframe class="w-full aspect-video" src="[https://www.youtube.com/embed/baQGU6W6lIA](https://www.youtube.com/embed/baQGU6W6lIA)" title="หนังสั้น Lilies mean goodbye" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Cast
 
