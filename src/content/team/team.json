@@ -17,7 +17,7 @@
       "si": 133,
       "line": "108",
       "position": "Vice President",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/films/1000018850.jpg",
       "id": "24-2"
     },
     {
@@ -57,7 +57,7 @@
       "si": 132,
       "line": "148",
       "position": "Head of Resources",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/films/1000018851.jpg",
       "id": "24-6"
     },
     {
@@ -87,7 +87,7 @@
       "si": 133,
       "line": "108",
       "position": "President",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/films/1000018850.jpg",
       "id": "25-1"
     },
     {
@@ -107,7 +107,7 @@
       "si": 132,
       "line": "148",
       "position": "Treasury",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/films/1000018851.jpg",
       "id": "25-3"
     },
     {
