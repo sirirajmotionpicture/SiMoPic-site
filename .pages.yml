@@ -173,6 +173,6 @@ content:
 media:
 - name: assets
   label: Assets
-  input: src/assets/films
-  output: ../../assets/films
+  input: src/assets
+  output: ../../assets
   extensions: [png, jpeg, jpg]
