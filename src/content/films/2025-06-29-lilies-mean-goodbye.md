@@ -10,7 +10,7 @@ runtimemin: 3
 runtimesec: 21
 watchlink: https://youtu.be/baQGU6W6lIA
 slug: 2025-lilies-mean-goodbye
-cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
+cover: ../../assets/2024-film-lilies.jpg
 ---
 ### Synopsis
 
@@ -20,7 +20,7 @@ cover: ../../assets/films/Screenshot_20250629_115300_Instagram.jpg
 
 * * *
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/vW7La6Yk\_MQ" title="Lilies Mean Goodbye \[Director's Cut\] | หนังสั้น Senior Farewell 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/vW7La6Yk_MQ" title="Lilies Mean Goodbye [Director&#39;s Cut] | หนังสั้น Senior Farewell 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Screen Version
 

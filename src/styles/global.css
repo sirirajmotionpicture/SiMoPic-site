@@ -25,13 +25,13 @@ body {
 
 /* Headers */
 h1 {
-    @apply text-4xl font-bold leading-15
+    @apply text-4xl font-bold py-2
 }
 h2 {
-    @apply text-2xl font-bold leading-15
+    @apply text-2xl font-bold py-2
 }
 h3 {
-    @apply text-xl font-bold leading-12
+    @apply text-xl font-bold py-2
 }
 hr {
     @apply p-1
@@ -90,11 +90,6 @@ hr {
 
 .alumb {
     @apply text-xs p-4 border-1 border-zinc-400 h-fit
-}
-
-article {
-    text-align: justify;
-    text-justify: inter-character;
 }
 
 td {

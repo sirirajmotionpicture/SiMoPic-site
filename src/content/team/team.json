@@ -7,7 +7,7 @@
       "si": 132,
       "line": "033",
       "position": "President",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "24-1"
     },
     {
@@ -17,7 +17,7 @@
       "si": 133,
       "line": "108",
       "position": "Vice President",
-      "cover": "../../assets/films/1000018850.jpg",
+      "cover": "../../assets/25-1.jpg",
       "id": "24-2"
     },
     {
@@ -27,7 +27,7 @@
       "si": 132,
       "line": "162",
       "position": "Secretary",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "24-3"
     },
     {
@@ -37,7 +37,7 @@
       "si": 132,
       "line": "120",
       "position": "Treasury",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "24-4"
     },
     {
@@ -47,7 +47,7 @@
       "si": 132,
       "line": "240",
       "position": "Head of PR",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/25-4.jpg",
       "id": "24-5"
     },
     {
@@ -57,7 +57,7 @@
       "si": 132,
       "line": "148",
       "position": "Head of Resources",
-      "cover": "../../assets/films/1000018851.jpg",
+      "cover": "../../assets/25-3.jpg",
       "id": "24-6"
     },
     {
@@ -67,7 +67,7 @@
       "si": 132,
       "line": "142",
       "position": "Head of Resources",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "24-7"
     },
     {
@@ -77,7 +77,7 @@
       "si": 134,
       "line": "231",
       "position": "Core Team",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/25-6.jpg",
       "id": "24-8"
     },
     {
@@ -87,7 +87,7 @@
       "si": 133,
       "line": "108",
       "position": "President",
-      "cover": "../../assets/films/1000018850.jpg",
+      "cover": "../../assets/25-1.jpg",
       "id": "25-1"
     },
     {
@@ -97,7 +97,7 @@
       "si": 132,
       "line": "033",
       "position": "Vice President",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "25-2"
     },
     {
@@ -107,7 +107,7 @@
       "si": 132,
       "line": "148",
       "position": "Treasury",
-      "cover": "../../assets/films/1000018851.jpg",
+      "cover": "../../assets/25-3.jpg",
       "id": "25-3"
     },
     {
@@ -117,7 +117,7 @@
       "si": 132,
       "line": "240",
       "position": "Head of PR",
-      "cover": "./2025/25-4.jpg",
+      "cover": "../../assets/25-4.jpg",
       "id": "25-4"
     },
     {
@@ -127,7 +127,7 @@
       "si": 132,
       "line": "142",
       "position": "Head of Resources",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "25-5"
     },
     {
@@ -137,7 +137,7 @@
       "si": 134,
       "line": "231",
       "position": "Core Team",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/25-6.jpg",
       "id": "25-6"
     },
     {
@@ -147,7 +147,7 @@
       "si": 132,
       "line": "120",
       "position": "Core Team",
-      "cover": "./mock.jpg",
+      "cover": "../../assets/mock.jpg",
       "id": "25-7"
     }
   ]
