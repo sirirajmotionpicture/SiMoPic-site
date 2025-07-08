@@ -1,7 +1,7 @@
 ---
 title: "Filmmaker Workshop: Capture the Moment"
 datefrom: 2025-07-16
-time: "13.00"
+timefrom: "13.00"
 timeto: "16.00"
 place: SiMR (อาจเปลี่ยนแปลง)
 regisfrom: วันนี้
