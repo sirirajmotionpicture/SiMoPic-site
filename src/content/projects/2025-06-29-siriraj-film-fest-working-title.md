@@ -1,7 +1,7 @@
 ---
 title: Siriraj Film Fest (working title)
 datefrom: 2026-01-01
-time: (provis.)
+timefrom: (provisional date)
 place: คณะแพทยศาสตร์ศิริราชพยาบาล
 regisfrom: วันนี้
 registo: จนกว่าจะเปลี่ยนแปลง
