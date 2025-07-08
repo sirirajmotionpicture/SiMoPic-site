@@ -73,7 +73,7 @@ content:
         type: date
         description: must be in 'yyyy-mm-dd' format
         required: true
-      - name: time
+      - name: timefrom
         label: Time of Activity (from)
         type: string
       - name: dateto
