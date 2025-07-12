@@ -81,6 +81,36 @@
       "id": "24-8"
     },
     {
+      "ay": 2024,
+      "nickname": "ดาเนียล",
+      "name": "ปรีดา พาหิระ",
+      "si": 133,
+      "line": "022",
+      "position": "Staff of PR",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-9"
+    },
+    {
+      "ay": 2024,
+      "nickname": "ม่อน",
+      "name": "ณทปพน อภิกุลประภา",
+      "si": 133,
+      "line": "093",
+      "position": "Staff of PR",
+      "cover": "../../assets/24-10.jpg",
+      "id": "24-10"
+    },
+    {
+      "ay": 2024,
+      "nickname": "หยอง",
+      "name": "ณภัทร โกเมนเอก",
+      "si": 132,
+      "line": "088",
+      "position": "Staff of PR",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-11"
+    },
+    {
       "ay": 2025,
       "nickname": "ณ",
       "name": "ณัธวรรธ เมืองแก้ว",
