@@ -3,7 +3,7 @@ title: "Filmmaker Workshop: Capture the Moment"
 datefrom: 2025-07-16
 timefrom: "13.00"
 timeto: "16.00"
-place: SiMR (อาจเปลี่ยนแปลง)
+place: ห้อง 901 อาคาร SiMR
 regisfrom: วันนี้
 registo: 14 Jul 2025
 regislink: https://forms.gle/S1qS79g61dDsTXFB9
