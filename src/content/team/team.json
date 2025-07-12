@@ -111,6 +111,26 @@
       "id": "24-11"
     },
     {
+      "ay": 2024,
+      "nickname": "วิว",
+      "name": "วรัญญา เตชาวงศ์",
+      "si": 133,
+      "line": "046",
+      "position": "Staff of Resources",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-12"
+    },
+    {
+      "ay": 2024,
+      "nickname": "ท่าน",
+      "name": "ดรัณ โยธาวุธ",
+      "si": 133,
+      "line": "164",
+      "position": "Staff of Resources",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-13"
+    },
+    {
       "ay": 2025,
       "nickname": "ณ",
       "name": "ณัธวรรธ เมืองแก้ว",
