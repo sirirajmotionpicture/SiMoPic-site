@@ -7,7 +7,7 @@
       "si": 132,
       "line": "033",
       "position": "President",
-      "cover": "../../assets/mock.jpg",
+      "cover": "../../assets/25-2.jpg",
       "id": "24-1"
     },
     {
@@ -27,7 +27,7 @@
       "si": 132,
       "line": "162",
       "position": "Secretary",
-      "cover": "../../assets/mock.jpg",
+      "cover": "../../assets/24-3.png",
       "id": "24-3"
     },
     {
@@ -47,7 +47,7 @@
       "si": 132,
       "line": "240",
       "position": "Head of PR",
-      "cover": "../../assets/25-4.jpg",
+      "cover": "../../assets/24-5.jpg",
       "id": "24-5"
     },
     {
@@ -81,6 +81,56 @@
       "id": "24-8"
     },
     {
+      "ay": 2024,
+      "nickname": "ดาเนียล",
+      "name": "ปรีดา พาหิระ",
+      "si": 133,
+      "line": "022",
+      "position": "Staff of PR",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-9"
+    },
+    {
+      "ay": 2024,
+      "nickname": "ม่อน",
+      "name": "ณทปพน อภิกุลประภา",
+      "si": 133,
+      "line": "093",
+      "position": "Staff of PR",
+      "cover": "../../assets/24-10.jpg",
+      "id": "24-10"
+    },
+    {
+      "ay": 2024,
+      "nickname": "หยอง",
+      "name": "ณภัทร โกเมนเอก",
+      "si": 132,
+      "line": "088",
+      "position": "Staff of PR",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-11"
+    },
+    {
+      "ay": 2024,
+      "nickname": "วิว",
+      "name": "วรัญญา เตชาวงศ์",
+      "si": 133,
+      "line": "046",
+      "position": "Staff of Resources",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-12"
+    },
+    {
+      "ay": 2024,
+      "nickname": "ท่าน",
+      "name": "ดรัณ โยธาวุธ",
+      "si": 133,
+      "line": "164",
+      "position": "Staff of Resources",
+      "cover": "../../assets/mock.jpg",
+      "id": "24-13"
+    },
+    {
       "ay": 2025,
       "nickname": "ณ",
       "name": "ณัธวรรธ เมืองแก้ว",
@@ -97,7 +147,7 @@
       "si": 132,
       "line": "033",
       "position": "Vice President",
-      "cover": "../../assets/mock.jpg",
+      "cover": "../../assets/25-2.jpg",
       "id": "25-2"
     },
     {
@@ -117,7 +167,7 @@
       "si": 132,
       "line": "240",
       "position": "Head of PR",
-      "cover": "../../assets/25-4.jpg",
+      "cover": "../../assets/25-04.jpg",
       "id": "25-4"
     },
     {
