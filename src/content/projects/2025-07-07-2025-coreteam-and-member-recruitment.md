@@ -1,6 +1,6 @@
 ---
 title: 2025 Coreteam & Member Recruitment
-datefrom: 2025-08-26
+datefrom: 2025-08-01
 place: Siriraj Motion Picture Club
 regisfrom: วันนี้
 registo: จนกว่าจะเปลี่ยนแปลง
