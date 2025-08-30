@@ -12,6 +12,7 @@ watchlink: https://youtu.be/baQGU6W6lIA
 slug: 2025-lilies-mean-goodbye
 cover: ../../assets/2024-film-lilies.jpg
 displaygallery: false
+displaygallerylink: false
 ---
 ### Synopsis
 

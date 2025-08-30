@@ -10,7 +10,7 @@ regislink: https://docs.google.com/forms/d/e/1FAIpQLSf9_4o2wWoDicA_hb5n_sMn-dzRG
 slug: 2025-when-doc-saw-films
 cover: ../../assets/when doc saw films.jpg
 displaygallery: false
-
+displaygallerylink: false
 ---
 ### '~Book~ Movie Club' ประจำปีของชมรม Siriraj Motion Picture
 

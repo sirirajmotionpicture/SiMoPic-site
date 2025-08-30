@@ -10,7 +10,7 @@ regislink: https://forms.gle/S1qS79g61dDsTXFB9
 slug: 2025-capture
 cover: ../../assets/2025-proj-capture.png
 displaygallery: false
-
+displaygallerylink: false
 ---
 📸 Workshop การถ่ายวิดีโอและภาพนิ่ง โดยชมรม Siriraj Motion Picture
 

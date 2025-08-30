@@ -69,6 +69,11 @@ content:
         options:
           multiple: true
           path: projectgallery
+      - name: displaygallerylink
+        label: Display Gallery Link
+        type: boolean
+        default: false
+        required: true
       - name: gallerylink
         label: Gallery Link
         type: string
@@ -136,6 +141,11 @@ content:
         options:
           multiple: true
           path: projectgallery
+      - name: displaygallerylink
+        label: Display Gallery Link
+        type: boolean
+        default: false
+        required: true
       - name: gallerylink
         label: Gallery Link
         type: string
