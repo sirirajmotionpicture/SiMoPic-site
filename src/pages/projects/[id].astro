@@ -44,7 +44,7 @@ const { Content } = await render(post);
                         <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
                     </div>      
                 </div>
-                <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮Register here</div></div></a>    
+                <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮 Register here</div></div></a>    
             </div>
         </div>
 
@@ -69,6 +69,9 @@ const { Content } = await render(post);
 				        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
 			        </div>
                 </div>
+                <div>
+                    📖 read more at: <a class="link" href={post.data.gallerylink}>{post.data.gallerylink}</a>
+                </div>
             }
         </div>
 
@@ -87,7 +90,7 @@ const { Content } = await render(post);
                 </div> 
             </div>
 
-            <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮Register here</div></div></a>
+            <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮 Register here</div></div></a>
         </div>
 
     </div>

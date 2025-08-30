@@ -21,6 +21,9 @@ const filmsCollection = defineCollection({
             runtimesec: z.number().optional(),
             watchlink: z.string().optional(),
             cover: image(),
+            displaygallery: z.boolean(),
+            gallery: z.array(image()).optional(),
+            gallerylink: z.string().optional(),
         })
 });
 

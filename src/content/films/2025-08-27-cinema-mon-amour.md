@@ -13,6 +13,7 @@ runtimesec: 11
 watchlink: https://youtu.be/wC8jCxfYF6Y
 slug: 2025-cinema-mon-amour
 cover: ../../assets/poster ig.png
+displaygallery: false
 ---
 ### Synopsis
 * * *
