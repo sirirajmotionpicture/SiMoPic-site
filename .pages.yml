@@ -108,6 +108,22 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: displaygallery
+        label: Display Gallery
+        type: boolean
+        default: false
+        required: true
+      - name: gallery
+        label: Gallery
+        type: image
+        required: false
+        options:
+          multiple: true
+          path: projectgallery
+      - name: gallerylink
+        label: Gallery Link
+        type: string
+        required: false
  - name: team
    label: Team
    path: src/content/team/team.json

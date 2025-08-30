@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Prose from '../../components/Prose.astro';
 
 import { getCollection, render } from 'astro:content';
 // 1. Generate a new path for every collection entry
@@ -43,12 +44,32 @@ const { Content } = await render(post);
                         <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
                     </div>      
                 </div>
-                <a href= {post.data.regislink} class=""><div class="button w-full">📮Register here</div></a>    
+                <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮Register here</div></div></a>    
             </div>
         </div>
 
         <div class="col-span-2 px-0 md:px-8">
-            <Content />
+            <Prose>
+                <Content />
+            </Prose>
+
+            {post.data.displaygallery && 
+                <div class="sectionh mt-8">📸 Gallery</div>
+                <div class="sectionb">                
+                    <div class="flex flex-row flex-nowrap items-center gap-x-4 overflow-x-scroll touch-auto snap-x snap-mandatory">
+                        {post.data.gallery.map(gallery =>
+                            <div class="snap-center w-full flex-none">
+                                <Image src={gallery} alt="" class="" />
+                            </div>
+                        )}
+                    </div>
+                    <div class="w-full text-center text-sm text-zinc-500 pt-2">
+				        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
+				        scroll to see more
+				        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+			        </div>
+                </div>
+            }
         </div>
 
         <div class="col-span-1 hidden 2xl:inline">
@@ -66,7 +87,7 @@ const { Content } = await render(post);
                 </div> 
             </div>
 
-            <a href= {post.data.regislink} class=""><div class="button w-full">📮Register here</div></a>
+            <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮Register here</div></div></a>
         </div>
 
     </div>

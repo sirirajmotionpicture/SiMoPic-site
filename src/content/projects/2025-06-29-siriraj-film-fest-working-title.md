@@ -8,6 +8,8 @@ registo: จนกว่าจะเปลี่ยนแปลง
 regislink: https://forms.gle/R4tNscgd8cgysx4r7
 slug: 2025-film-fest
 cover: ../../assets/2025-proj-film-fest-2.png
+displaygallery: true
+
 ---
 ### Film Fest คืออะไร??
 

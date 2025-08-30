@@ -3,6 +3,7 @@
 
 /*tailwind*/
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* Inter font*/
 :root {
@@ -23,7 +24,7 @@ body {
     @apply bg-zinc-950 text-zinc-300 font-default;
 }
 
-/* Headers */
+/* Headers 
 h1 {
     @apply text-4xl font-bold py-2
 }
@@ -36,7 +37,7 @@ h3 {
 hr {
     @apply p-1
 }
-
+*/
 
 /*page*/
 
@@ -66,8 +67,12 @@ hr {
     @apply border-b-1 border-dashed border-zinc-400
 }
 
+.buttonbg{
+    @apply bg-[url(/button.png)] bg-cover rounded-full 
+}
+
 .button {
-    @apply p-2 mb-4 font-bold text-zinc-950 bg-zinc-300
+    @apply p-2 mb-4 w-full font-bold text-zinc-300 rounded-full outline-1 outline-zinc-400 hover:outline-zinc-950 backdrop-brightness-25 hover:text-zinc-950 hover:backdrop-brightness-100 transition-all
 }
 
 /* About */

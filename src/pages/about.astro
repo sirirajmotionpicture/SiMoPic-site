@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Prose from '../components/Prose.astro';
 
 const pageTitle = "About - Siriraj Motion Picture Club";
 
@@ -29,7 +30,11 @@ import contentImg from '../content/about.jpg';
 			<p>Who Are We?</p>
 		</div>
 		<div class="sectionb grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-			<div class="col-span-1 lg:col-span-2 pb-4 md:pb-0 pr-0 md:pr-4"><article><Content /></article></div>
+			<div class="col-span-1 lg:col-span-2 pb-4 md:pb-0 pr-0 md:pr-4">
+				<Prose>
+                	<Content />
+				</Prose>
+			</div>
 			<div><Image alt="" src={contentImg}  /></div>
 		</div>
 	</section>

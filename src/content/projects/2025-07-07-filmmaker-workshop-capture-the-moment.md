@@ -9,6 +9,8 @@ registo: 14 Jul 2025
 regislink: https://forms.gle/S1qS79g61dDsTXFB9
 slug: 2025-capture
 cover: ../../assets/2025-proj-capture.png
+displaygallery: true
+
 ---
 📸 Workshop การถ่ายวิดีโอและภาพนิ่ง โดยชมรม Siriraj Motion Picture
 

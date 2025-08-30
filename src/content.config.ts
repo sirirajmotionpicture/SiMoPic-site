@@ -38,6 +38,9 @@ const projectsCollection = defineCollection({
             registo: z.string().optional(),
             regislink: z.string().optional(),
             cover: image(),
+            displaygallery: z.boolean(),
+            gallery: z.array(image()).optional(),
+            gallerylink: z.string().optional(),
         }) 
 });
 

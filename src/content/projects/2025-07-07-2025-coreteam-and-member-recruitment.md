@@ -7,6 +7,8 @@ registo: จนกว่าจะเปลี่ยนแปลง
 regislink: https://forms.gle/k6P6UCaeDUNdUU747
 slug: 2025-recruit
 cover: ../../assets/2025-proj-recruit.png
+displaygallery: false
+
 ---
 📢รับสมัคร Coreteam และสมาชิกชมรมแล้ววันนี้⏰
 
