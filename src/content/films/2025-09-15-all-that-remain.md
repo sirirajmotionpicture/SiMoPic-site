@@ -12,7 +12,7 @@ runtimemin: 5
 runtimesec: 0
 watchlink: https://www.instagram.com/reel/DOlHzv-DkPw/?igsh=MWlnaTZ6NzdvamdtdA==
 slug: 2025-all-that-remain
-cover: ../../assets/projectgallery/2025-allthatremain-1.jpg
+cover: ../../assets/2025-all-that-remain.jpg
 displaygallery: true
 gallery:
   - ../../assets/projectgallery/2025-allthatremain-1.jpg
@@ -41,7 +41,7 @@ gallerylink: https://youtu.be/FgunP-n6Yxg?t=952
 
 ### Crew
 
-<hr />
+* * *
 
 |     |     |
 | --- | --- |
