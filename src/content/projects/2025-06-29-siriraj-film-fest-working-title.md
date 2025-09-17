@@ -3,8 +3,8 @@ title: Siriraj Film Fest (working title)
 datefrom: 2026-01-01
 timefrom: (provisional date)
 place: คณะแพทยศาสตร์ศิริราชพยาบาล
-regisfrom: วันนี้
-registo: จนกว่าจะเปลี่ยนแปลง
+regisfrom: 17 Sep
+registo: 24 Sep 2025
 regislink: https://forms.gle/26c5arFRrv7CDyB66
 slug: 2025-film-fest
 cover: ../../assets/2025-filmfest-1-1.jpg
