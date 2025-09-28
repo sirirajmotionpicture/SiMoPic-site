@@ -12,17 +12,20 @@ const allFilms = (await getCollection('films')).sort(
 	
 	<div class ="pagetitle">FILMS</div>
 
-	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+	<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-4">
 		{allFilms.map((post: any) => 
 			<a href={`/films/${post.id}`}>
-				<div class="grid grid-cols-1 md:grid-cols-2">
-					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
+				<div class="">
+					<div class="border-zinc-400 border-x-1 border-t-1"><Image src={post.data.cover} alt="" /></div>
 					<div>
-						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
-						<div class="sectionbnm md:border-l-0">
-							<p class="font-bold pb-2">{post.data.date.toUTCString().slice(0,16)}</p>
-							<p class="text-sm">Runtime {post.data.runtimehour} h {post.data.runtimemin} m {post.data.runtimesec} s<br>
-							{post.data.genre}</p>
+						<div class="sectionhnm text-center">{post.data.title}</div>
+						<div class="sectionbnm text-center">
+							<p class="text-sm font-bold pb-1">{post.data.date.toUTCString().slice(0,16)}</p>
+							<p class="text-xs">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> {post.data.runtime} mins<br>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline">  <path d="M3.75 2a.75.75 0 0 0-.75.75v10.5a.75.75 0 0 0 1.28.53L8 10.06l3.72 3.72a.75.75 0 0 0 1.28-.53V2.75a.75.75 0 0 0-.75-.75h-8.5Z" /></svg> {post.data.projectname}<br>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> {post.data.genre}
+							</p>
 						</div> 
 					</div>
 				</div>

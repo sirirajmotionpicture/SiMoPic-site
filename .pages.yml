@@ -28,20 +28,10 @@ content:
         type: select
         options:
           multiple: true
-          values: [Advert, Drama, Comedy, Thriller, Video Art, Other]
-      - name: runtimehour
-        label: Runtime (h)
+          values: [Advert, Drama, Comedy, Thriller, Video Art, Educational, Documentary, Romantic]
+      - name: runtime
+        label: Runtime (mins)
         type: number
-      - name: runtimemin
-        label: Runtime (m)
-        type: number
-        options:
-          max: 60
-      - name: runtimesec
-        label: Runtime (s)
-        type: number
-        options:
-          max: 60
       - name: watchlink
         label: Video Link
         type: string

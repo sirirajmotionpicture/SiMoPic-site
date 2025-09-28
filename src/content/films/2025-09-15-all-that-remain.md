@@ -7,9 +7,7 @@ projectlink: https://www.instagram.com/tongmahidol/
 genre:
   - Advert
   - Drama
-runtimehour: 0
-runtimemin: 5
-runtimesec: 0
+runtime: 5
 watchlink: https://www.instagram.com/reel/DOlHzv-DkPw/?igsh=MWlnaTZ6NzdvamdtdA==
 slug: 2025-all-that-remain
 cover: ../../assets/2025-all-that-remain.jpg

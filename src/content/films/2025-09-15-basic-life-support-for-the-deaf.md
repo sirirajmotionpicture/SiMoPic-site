@@ -2,9 +2,7 @@
 title: Basic Life Support for the Deaf
 date: 2025-09-10
 projectname: BLS for the Deaf
-runtimehour: 0
-runtimemin: 5
-runtimesec: 1
+runtime: 5
 watchlink: https://www.youtube.com/watch?v=6n_SufX1Pd0
 slug: 2025-bls-for-deaf
 cover: ../../assets/2025-bls-for-deaf.jpg

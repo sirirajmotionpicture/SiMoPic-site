@@ -43,7 +43,7 @@ const { Content } = await render(post);
                         <div class="col-span-1"><b>Genre</b></div>
                         <div class="col-span-3">{post.data.genre}</div>
                         <div class="col-span-1"><b>Runtime</b></div>
-                        <div class="col-span-3">{post.data.runtimehour} h {post.data.runtimemin} m {post.data.runtimesec} s</div>
+                        <div class="col-span-3">{post.data.runtime} mins</div>
                     </div>      
                 </div>
                 <a href= {post.data.watchlink} class=""><div class="buttonbg"><div class="button">🎞️ Watch here</div></div></a>    
@@ -92,7 +92,7 @@ const { Content } = await render(post);
                     <div class="col-span-1"><b>Genre</b></div>
                     <div class="col-span-3">{post.data.genre}</div>
                     <div class="col-span-1"><b>Runtime</b></div>
-                    <div class="col-span-3">{post.data.runtimehour} h {post.data.runtimemin} m {post.data.runtimesec} s</div>
+                    <div class="col-span-3">{post.data.runtime} mins</div>
                 </div>      
             </div>
             <a href= {post.data.watchlink} class=""><div class="buttonbg"><div class="button">🎞️ Watch here</div></div></a>

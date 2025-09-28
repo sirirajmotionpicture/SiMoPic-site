@@ -57,8 +57,12 @@ hr {
     @apply p-4 mb-4 border-1 border-zinc-400 
 }
 
+.sectionhnm {
+    @apply text-lg text-center font-bold text-wrap w-full px-3 py-2 border-1 border-b-0 border-zinc-400 bg-zinc-900
+}
+
 .sectionbnm {
-    @apply p-4 border-1 border-zinc-400 
+    @apply p-2 border-1 border-zinc-400 
 }
 
 /* Links */

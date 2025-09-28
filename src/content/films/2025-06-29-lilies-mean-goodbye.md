@@ -5,9 +5,7 @@ projectname: Senior Farewell 2025
 projectlink: https://www.instagram.com/seniorfarewell2025/
 genre:
   - Drama
-runtimehour: 0
-runtimemin: 3
-runtimesec: 21
+runtime: 4
 watchlink: https://youtu.be/baQGU6W6lIA
 slug: 2025-lilies-mean-goodbye
 cover: ../../assets/2024-film-lilies.jpg

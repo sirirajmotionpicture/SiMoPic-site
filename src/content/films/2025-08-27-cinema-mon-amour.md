@@ -3,13 +3,11 @@ title: Cinema Mon Amour
 date: 2025-08-27
 time: "13.15"
 projectname: เบิกฟ้าชมรม 2568
-projectlink: https://www.instagram.com/burkfah.chomrom/
+projectlink: https://www.instagram.com/siclubs.official/
 genre:
   - Drama
   - Comedy
-runtimehour: 0
-runtimemin: 13
-runtimesec: 11
+runtime: 13
 watchlink: https://youtu.be/wC8jCxfYF6Y
 slug: 2025-cinema-mon-amour
 cover: ../../assets/poster ig.png
