@@ -13,8 +13,6 @@ slug: 2025-all-that-remain
 cover: ../../assets/2025-all-that-remain.jpg
 displaygallery: true
 gallery:
-  - ../../assets/2025-bls-for-deaf-3.jpg
-  - ../../assets/2025-bls-for-deaf.jpg
   - ../../assets/filmgallery/2025-all-that-remain-2.jpg
   - ../../assets/filmgallery/2025-all-that-remain-3.jpg
   - ../../assets/filmgallery/2025-all-that-remain-4.jpg
@@ -29,7 +27,7 @@ gallerylink: https://youtu.be/FgunP-n6Yxg?t=952
 
 ### Synopsis
 
-<hr />
+* * *
 
 เรื่องราวของ **จอห์น** ชายธรรมดาที่ใช้ชีวิตในละแวกบางกอกน้อย และความสัมพันธ์ของเขากับโรงพยาบาลศิริราช ที่ดูแลเขาตั้งแต่เกิดจนถึงวาระสุดท้ายของชีวิต โดยภาพยนตร์สั้นเรื่องนี้จะพาไปสำรวจการรักษา และการดูแลที่จอห์นได้รับในแต่ละช่วงชีวิต ไม่ว่าจะเป็นตัวเขาเอง หรือคนรอบข้าง
 
