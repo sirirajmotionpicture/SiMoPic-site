@@ -20,6 +20,7 @@ gallery:
   - ../../assets/filmgallery/2025-all-that-remain-6.jpg
   - ../../assets/filmgallery/2025-all-that-remain-7.jpg
   - ../../assets/filmgallery/2025-all-that-remain-8.jpg
+  - ../../assets/filmgallery/2025-all-that-remain-1.jpg
 displaygallerylink: true
 gallerylink: https://youtu.be/FgunP-n6Yxg?t=952
 ---
