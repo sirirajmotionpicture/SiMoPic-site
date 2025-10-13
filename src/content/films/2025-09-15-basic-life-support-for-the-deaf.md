@@ -1,5 +1,5 @@
 ---
-title: Basic Life Support for the Deaf
+title: BLS for the Deaf
 date: 2025-09-10
 projectname: BLS for the Deaf
 genre:
