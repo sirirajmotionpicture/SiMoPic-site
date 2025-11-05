@@ -1,7 +1,10 @@
 ---
-title: Basic Life Support for the Deaf
+title: BLS for the Deaf
 date: 2025-09-10
 projectname: BLS for the Deaf
+projectlink: https://www.instagram.com/p/DOBCUKUkQYr/?igsh=czU3YnE2OHU4Z3A2
+genre:
+  - Educational
 runtime: 5
 watchlink: https://www.youtube.com/watch?v=6n_SufX1Pd0
 slug: 2025-bls-for-deaf
@@ -9,14 +12,13 @@ cover: ../../assets/2025-bls-for-deaf.jpg
 displaygallery: true
 gallery:
   - ../../assets/2025-bls-for-deaf-3.jpg
-displaygallerylink: true
-gallerylink: https://www.instagram.com/p/DOBCUKUkQYr/?igsh=czU3YnE2OHU4Z3A2
+displaygallerylink: false
 ---
-เป็นส่วนหนึ่งของกิจกรรม Workshop Basic Life Support (BLS) สำหรับผู้พิการทางการได้ยิน ชมรม Siriraj Better Together
+<p style="text-align: center">เป็นส่วนหนึ่งของกิจกรรม<br><strong>Basic Life Support (BLS) Workshop สำหรับผู้พิการทางการได้ยิน</strong><br>ร่วมกับชมรม Siriraj Better Together</p>
 
 ### Cast
 
-<hr />
+* * *
 
 |     |     |
 | --- | --- |
@@ -27,7 +29,7 @@ gallerylink: https://www.instagram.com/p/DOBCUKUkQYr/?igsh=czU3YnE2OHU4Z3A2
 
 ### Crew
 
-<hr />
+* * *
 
 |     |     |
 | --- | --- |
