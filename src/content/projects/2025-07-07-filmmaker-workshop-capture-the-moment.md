@@ -1,5 +1,5 @@
 ---
-title: "Filmmaker Workshop: Capture the Moment"
+title: Capture the Moment Workshop
 datefrom: 2025-07-16
 timefrom: "13.00"
 timeto: "16.00"
@@ -9,7 +9,9 @@ registo: 14 Jul 2025
 regislink: https://forms.gle/S1qS79g61dDsTXFB9
 slug: 2025-capture
 cover: ../../assets/2025-proj-capture.png
-displaygallery: false
+displaygallery: true
+gallery:
+  - ../../assets/2025-capture-workshop-1.jpg
 displaygallerylink: false
 ---
 📸 Workshop การถ่ายวิดีโอและภาพนิ่ง โดยชมรม Siriraj Motion Picture
@@ -23,9 +25,3 @@ displaygallerylink: false
 😍 พิเศษ! เปิดโอกาสให้ลองทำจริง โดยมีทีมช่วยฟีดแบค
 
 💥 **ไม่จำเป็นต้องมีกล้อง (สามารถใช้มือถือได้)**
-
-### ตารางกิจกรรม
-
-* * *
-
-_coming soon_
