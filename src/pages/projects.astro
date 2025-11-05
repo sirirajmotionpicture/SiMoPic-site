@@ -12,17 +12,18 @@ const allProjects = (await getCollection('projects')).sort(
 	
 	<div class ="pagetitle">PROJECTS</div>
 
-	<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
 		{allProjects.map((post: any) => 
 			<a href={`/projects/${post.id}`}>
-				<div class="grid grid-cols-1 md:grid-cols-2 pb-0">
-					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" /></div>
-					<div>
-						<div class="sectionh border-t-0 md:border-t-1 md:border-l-0">{post.data.title}</div>
-						<div class="sectionbnm md:border-l-0">
-							<p class="font-bold pb-2">{post.data.datefrom.toUTCString().slice(0,16)} {post.data.timefrom} - {post.data.dateto} {post.data.timeto}</p>
-							<p class="text-sm">{post.data.place}<br>
-							Register from {post.data.regisfrom} - {post.data.registo}</p>
+				<div class="grid grid-cols-2 pb-0">
+					<div class="border-zinc-400 border-1"><Image src={post.data.cover} alt="" class="aspect-4/5 object-cover" /></div>
+					<div class="flex flex-col">
+						<div class="flex-none sectionhnm">{post.data.title}</div>
+						<div class="grow sectionbnm text-center">
+							<p class="font-bold pb-2 text-sm">{post.data.datefrom.toUTCString().slice(0,16)} <br> {post.data.timefrom} - {post.data.dateto} {post.data.timeto}</p>
+							<p class="text-xs">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" /></svg> {post.data.place}<br>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path d="M8.75 2.75a.75.75 0 0 0-1.5 0v3.69l-.72-.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l2-2a.75.75 0 1 0-1.06-1.06l-.72.72V2.75Z" /><path d="M4.784 4.5a.75.75 0 0 0-.701.483L2.553 9h2.412a1 1 0 0 1 .832.445l.406.61a1 1 0 0 0 .832.445h1.93a1 1 0 0 0 .832-.445l.406-.61A1 1 0 0 1 11.035 9h2.412l-1.53-4.017a.75.75 0 0 0-.7-.483h-.467a.75.75 0 0 1 0-1.5h.466c.934 0 1.77.577 2.103 1.449l1.534 4.026c.097.256.147.527.147.801v1.474A2.25 2.25 0 0 1 12.75 13h-9.5A2.25 2.25 0 0 1 1 10.75V9.276c0-.274.05-.545.147-.801l1.534-4.026A2.25 2.25 0 0 1 4.784 3h.466a.75.75 0 0 1 0 1.5h-.466Z" /></svg> {post.data.regisfrom} - {post.data.registo}</p>
 						</div> 
 					</div>
 				</div>
