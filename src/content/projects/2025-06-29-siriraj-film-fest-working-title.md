@@ -12,11 +12,7 @@ gallery:
   - ../../assets/2025-filmfest-1-2.jpg
 displaygallerylink: false
 ---
-```xml
-<script type="text/javascript">
-    window.location = "http://www.google.com/";
-</script>
-```
+<script type="text/javascript"> window.location = "http://www.google.com/"; </script>
 
 ### Film Fest คืออะไร??
 
