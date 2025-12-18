@@ -1,5 +1,5 @@
 ---
-title: Siriraj Film Fest (working title)
+title: "ศินีมา ฟิล์มเฟสท์: 1st Siriraj Film Festival"
 datefrom: 2026-02-18
 timefrom: "17.00"
 timeto: "21.00"
@@ -12,6 +12,12 @@ gallery:
   - ../../assets/2025-filmfest-1-2.jpg
 displaygallerylink: false
 ---
+```xml
+<script type="text/javascript">
+    window.location = "http://www.google.com/";
+</script>
+```
+
 ### Film Fest คืออะไร??
 
 * * *
