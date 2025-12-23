@@ -75,8 +75,9 @@ content:
    type: collection
    view:
       fields: [ title, datefrom ]
-      sort: [ datefrom ]
-      order: asc
+      default:
+         sort: datefrom
+         order: asc
    fields:
       - name: title
         label: Title
