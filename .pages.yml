@@ -74,8 +74,9 @@ content:
    path: src/content/projects
    type: collection
    view:
-      fields: [title, datefrom]
-      sort: [datefrom]
+      fields: [ title, datefrom ]
+      sort: [ datefrom ]
+      order: asc
    fields:
       - name: title
         label: Title
