@@ -75,6 +75,7 @@ content:
    type: collection
    view:
       fields: [title, datefrom]
+      sort: [datefrom, title]
    fields:
       - name: title
         label: Title
