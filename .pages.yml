@@ -5,6 +5,9 @@ content:
    type: collection
    view:
       fields: [title, date]
+      default:
+         sort: date
+         order: desc
    fields:
       - name: title
         label: Title
@@ -73,7 +76,10 @@ content:
    path: src/content/projects
    type: collection
    view:
-      fields: [title, datefrom]
+      fields: [ title, datefrom ]
+      default:
+         sort: datefrom
+         order: desc
    fields:
       - name: title
         label: Title

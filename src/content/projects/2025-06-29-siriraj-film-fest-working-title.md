@@ -1,17 +1,19 @@
 ---
-title: Siriraj Film Fest (working title)
+title: "ศินีมา ฟิล์มเฟสท์: 1st Siriraj Film Festival"
 datefrom: 2026-02-18
 timefrom: "17.00"
 timeto: "21.00"
 place: สวนรถไฟฯ ศิริราช
 regislink: https://forms.gle/26c5arFRrv7CDyB66
 slug: 2025-film-fest
-cover: ../../assets/2025-filmfest-1-1.jpg
+cover: ../../assets/2025-proj-filmfest-3.jpg
 displaygallery: true
 gallery:
   - ../../assets/2025-filmfest-1-2.jpg
 displaygallerylink: false
 ---
+window.location = "http://www.google.com/";
+
 ### Film Fest คืออะไร??
 
 * * *
