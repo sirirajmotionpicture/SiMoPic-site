@@ -7,6 +7,9 @@ const pageTitle = "ศินิมา ฟิล์มเฟสท์ - เทศ
 import bg from '../../assets/SiFF1/SiFF1-bg.png';
 
 import heroimg from '../../assets/SiFF1/SiFF1-hero.png';
+import herobg from '../../assets/SiFF1/SiFF1-hero-bg.png';
+import logobg from '../../assets/SiFF1/SiFF1-hero-logobg.png';
+import logo from '../../assets/SiFF1/SiFF1-hero-logo.svg';
 
 import ASlogo from '../../assets/SiFF1/SiFF1-ASlogo.png';
 
@@ -46,8 +49,25 @@ import poster1 from '../../assets/SiFF1/films/1 Friend.png';
         }
     </style>
 
-    <section id="hero" class="relative h-(--banner-height) w-full">
+    <section id="hero" class="h-(--banner-height) w-full">
 
+        <div class="h-(--banner-height) w-full bg-cover bg-center relative flex m-auto" style={`background-image: url(${herobg.src});`}>
+            <div class="flex m-auto mix-blend-screen -translate-y-[calc(var(--banner-height)/6)]"><Image src={logobg} alt="background" class="m-auto w-full max-w-[500px] px-10 object-contain" /></div>
+            <div class="absolute inset-0 flex m-auto -translate-y-[calc(var(--banner-height)/6)]"><Image src={logo} alt="background" class="m-auto w-full max-w-[500px] px-20 sm:px-22" /></div>
+            
+            <div class="absolute inset-x-0 top-0 pt-[calc(var(--banner-height)/6)] text-xl font-bold text-zinc-950 text-center">เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1</div>
+            <div class="absolute inset-x-0 top-0 pt-[calc(var(--banner-height)/2)] -translate-y-6 text-zinc-950 text-center"><span class="font-bold">วันพุธที่ 17 กุมภาพันธ์ 2569</span><br><span class="font-medium text-sm leading-none">17.00 น. เป็นต้นไป ณ สวนรถไฟศิริราช <br>(ภายในงาน Art Space) </span></div>
+
+            <div class="z-40 absolute bottom-2 w-full grid grid-cols-1 justify-items-center text-zinc-200 pt-2 animate-bounce">
+                <a href="#films">
+                    <div class="rounded-full w-min p-2 bg-zinc-900"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        
+        <!-- 
         <Image src={heroimg} alt="background" class="h-(--banner-height) object-cover z-0"/>
 
         <div class="z-40 absolute bottom-2 w-full grid grid-cols-1 justify-items-center text-zinc-200 pt-2 animate-bounce">
@@ -56,7 +76,7 @@ import poster1 from '../../assets/SiFF1/films/1 Friend.png';
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
                 </div>
             </a> 
-        </div>
+        </div> -->
 
     </section>
 
