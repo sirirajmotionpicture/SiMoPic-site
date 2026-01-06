@@ -15,7 +15,7 @@ draft: true
 ---
 
 <script type="text/javascript">
-    window.location = "/p/SiFF-1";
+    window.location = "/p/sifilmfest-1";
 </script>
 
 
