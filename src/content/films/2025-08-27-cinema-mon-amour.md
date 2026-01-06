@@ -5,14 +5,15 @@ time: "13.15"
 projectname: เบิกฟ้าชมรม 2568
 projectlink: https://www.instagram.com/siclubs.official/
 genre:
-  - Drama
   - Comedy
+  - Drama
 runtime: 13
 watchlink: https://youtu.be/wC8jCxfYF6Y
 slug: 2025-cinema-mon-amour
-cover: ../../assets/poster ig.png
+cover: ../../assets/film/2025-film-cinema-mon-amour.png
 displaygallery: false
 displaygallerylink: false
+draft: false
 ---
 ### Synopsis
 

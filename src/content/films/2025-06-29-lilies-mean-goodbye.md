@@ -8,9 +8,10 @@ genre:
 runtime: 4
 watchlink: https://youtu.be/baQGU6W6lIA
 slug: 2025-lilies-mean-goodbye
-cover: ../../assets/2024-film-lilies.jpg
+cover: ../../assets/film/2024-film-lilies.jpg
 displaygallery: false
 displaygallerylink: false
+draft: false
 ---
 ### Synopsis
 

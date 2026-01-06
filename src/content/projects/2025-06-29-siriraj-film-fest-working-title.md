@@ -3,16 +3,21 @@ title: "ศินีมา ฟิล์มเฟสท์: 1st Siriraj Film Fest
 datefrom: 2026-02-18
 timefrom: "17.00"
 timeto: "21.00"
-place: สวนรถไฟฯ ศิริราช
+place: ลานใต้พลับพลาฯ สวนรถไฟฯ ศิริราช
 regislink: https://forms.gle/26c5arFRrv7CDyB66
 slug: 2025-film-fest
-cover: ../../assets/2025-proj-filmfest-3.jpg
-displaygallery: true
+cover: ../../assets/project/2025-proj-filmfest-final.png
+displaygallery: false
 gallery:
-  - ../../assets/2025-filmfest-1-2.jpg
+  - ../../assets/projectgallery/2025-filmfest-1-2.jpg
 displaygallerylink: false
+draft: true
 ---
-window.location = "http://www.google.com/";
+
+<script type="text/javascript">
+    window.location = "/p/SiFF-1";
+</script>
+
 
 ### Film Fest คืออะไร??
 

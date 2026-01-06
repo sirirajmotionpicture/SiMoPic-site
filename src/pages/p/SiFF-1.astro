@@ -1,0 +1,211 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayoutFull from '@/layouts/BaseLayoutFull.astro';
+
+const pageTitle = "ศินิมา ฟิล์มเฟสท์ - เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1";
+
+import bg from '../../assets/SiFF1/SiFF1-bg.png';
+
+import heroimg from '../../assets/SiFF1/SiFF1-hero.png';
+
+import ASlogo from '../../assets/SiFF1/SiFF1-ASlogo.png';
+
+import poster0 from '../../assets/SiFF1/films/0 Placeholder.png';
+import poster1 from '../../assets/SiFF1/films/1 Friend.png';
+---
+
+<BaseLayoutFull pageTitle={pageTitle}>
+
+    <style>
+        /*tailwind*/
+        @import "tailwindcss";
+        @plugin "@tailwindcss/typography";
+        section {
+            font-feature-settings: "ss02" 1, "ss07" 1, "ss08" 1, "cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1, "cv11" 1;
+        }
+        .siff1sech {
+            background-color: #18181b;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%2309090b' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .siff1title {
+            background-color: #18181b;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%2309090b' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
+            @apply text-lg text-center font-bold text-wrap w-full px-3 py-2 mt-2 border-1 border-zinc-400
+        }
+        .siff1desc {
+            @apply p-2 text-center bg-zinc-900 mt-2 text-xs
+        }
+        .siff1showtime {
+            @apply px-2 py-1 rounded-full bg-cover bg-zinc-200 mx-0.5 text-sm font-bold text-zinc-950
+        }
+        hr {
+            @apply border-zinc-400 my-2
+        }
+        .siff1text {
+            @apply px-3 py-2 text-left bg-zinc-900 mb-4 text-sm
+        }
+    </style>
+
+    <section id="hero" class="relative h-(--banner-height) w-full">
+
+        <Image src={heroimg} alt="background" class="h-(--banner-height) object-cover z-0"/>
+
+        <div class="z-40 absolute bottom-2 w-full grid grid-cols-1 justify-items-center text-zinc-200 pt-2 animate-bounce">
+            <a href="#films">
+                <div class="rounded-full w-min p-2 bg-zinc-900"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
+                </div>
+            </a> 
+        </div>
+
+    </section>
+
+    <section id="films" class="w-full flex justify-center">
+        <div class="w-full max-w-[800px] px-4 mt-8"> 
+
+            <div class="w-full align-middle text-left mt-4 mb-4 siff1sech relative">
+                <Image src={bg} alt="background" class="inline object-cover h-11 w-full mix-blend-plus-lighter"/>
+                <p class="absolute inset-0 px-3 py-1.5 text-2xl font-bold text-zinc-950 ">Programme</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+
+                <!-- P wave -->
+                <a href="/films/2026-p-wave">
+                    <div class="h-full flex flex-col">
+                        <div class="flex-none"><Image src={poster0} alt="" class="aspect-4/5 object-cover"/></div>
+                        <div class="flex-none siff1title">พีเวฟ</div>
+                        <div class="flex-grow siff1desc">
+                            <img class="w-2/3 inline" src="/nav logo.png" />
+                            <hr />
+                            <p>หมอคณิตย์ แพทย์อนาคตไกลที่กำลังจะไปเรียนต่อในที่ๆฝัน ต้องพบเจอกับผู้มาเยือนปริศนาที่จะทำให้ชีวิตเขาเปลี่ยนไปตลอดกาล</p>
+                        </div>
+                        <div class="flex-none siff1desc">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> XX mins<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> Drama
+                            <hr />
+                            <span class="siff1showtime">17:25</span>
+                            <span class="siff1showtime">18:55</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Friend -->
+                <a href="/films/2026-friend">
+                    <div class="h-full flex flex-col">
+                        <div class="flex-none"><Image src={poster1} alt="" class="aspect-4/5 object-cover"/></div>
+                        <div class="flex-none siff1title">เพื่อน</div>
+                        <div class="flex-grow siff1desc">
+                            <img class="w-2/3 inline" src="/nav logo.png" />
+                            <hr />
+                            <p>หนุ่มนศพ. ที่โดนแฟนบอกเลิกเพราะได้ทุนไปเรียนต่อต่างประเทศ ได้พบกับเพื่อนสาวของเขาที่เพิ่งโดนบอกเลิกมาเหมือนกัน ความสัมพันธ์ที่ไม่ชัดเจนของทั้งสองก็ได้เริ่มต้นขึ้น</p>
+                        </div>
+                        <div class="flex-none siff1desc">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> XX mins<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> Slice of Life, Drama
+                            <hr />
+                            <span class="siff1showtime">17:25</span>
+                            <span class="siff1showtime">18:55</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Art of filmmaker -->
+                <a href="/films/2026-the-art-of-filmmaker">
+                    <div class="h-full flex flex-col">
+                        <div class="flex-none"><Image src={poster0} alt="" class="aspect-4/5 object-cover"/></div>
+                        <div class="flex-none siff1title">The Art of Filmmaker</div>
+                        <div class="flex-grow siff1desc">
+                            <img class="w-2/3 inline" src="/nav logo.png" />
+                            <hr />
+                            <p>สมาชิกชมรมหนังสั้นที่มาร่วมกันจุดไฟฝันครั้งสุดท้าย(?) ทำหนังตามแต่ใจตัวเองในวันที่ชีวิตเป็นใจบ้าง ไม่เป็นใจบ้าง แต่ไม่เป็นไรเพราะมีใจและมีเพื่อน ๆ ที่พร้อมสู้ไปด้วยกันก็พอแล้ว</p>
+                        </div>
+                        <div class="flex-none siff1desc">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> XX mins<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> Documentary
+                            <hr />
+                            <span class="siff1showtime">17:25</span>
+                            <span class="siff1showtime">18:55</span>
+                        </div>
+                    </div>
+                </a>
+ 
+                <!-- MEDTU 1 -->
+                <a href="https://www.instagram.com/reel/DC1nn97ys_I/?igsh=d2ZzYzBnOWx4Yzd5">
+                    <div class="h-full flex flex-col">
+                        <div class="flex-none"><Image src={poster0} alt="" class="aspect-4/5 object-cover"/></div>
+                        <div class="flex-none siff1title">INSOMNIA</div>
+                        <div class="flex-grow siff1desc">
+                            <strong>MedTU Short Film & Photo Club</strong> <!-- <img class="w-2/3 inline" src="/nav logo.png" /> -->
+                            <hr />
+                            <p>“ไม่อยากนอน ไม่กล้าฝัน”<br/>“Every good thing in this wolrd started with a dream”</p>
+                        </div>
+                        <div class="flex-none siff1desc">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> 16 mins<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> XX
+                            <hr />
+                            <span class="siff1showtime">17:25</span>
+                            <span class="siff1showtime">18:55</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- MEDTU 2 -->
+                <a href="https://www.instagram.com/reel/CjIZ92PJ99y/?igsh=MXkxcjQ4YzB6cmJkdQ==">
+                    <div class="h-full flex flex-col">
+                        <div class="flex-none"><Image src={poster0} alt="" class="aspect-4/5 object-cover"/></div>
+                        <div class="flex-none siff1title">I AM (who I am)</div>
+                        <div class="flex-grow siff1desc">
+                            <strong>MedTU Short Film & Photo Club</strong> <!-- <img class="w-2/3 inline" src="/nav logo.png" /> -->
+                            <hr />
+                            <p>นักศึกษาแพทย์จำเป็นต้องเรียนอย่างเดียวมั้ย? 🤔🥸<br/>แล้วนักศึกษาแพทย์จะทำอะไรได้อีกล่ะ? 👩‍⚕️🩺</p>
+                        </div>
+                        <div class="flex-none siff1desc">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" /></svg> 12 mins<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="fill-zinc-300 size-3 inline"><path fill-rule="evenodd" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v2.879a2.5 2.5 0 0 0 .732 1.767l4.5 4.5a2.5 2.5 0 0 0 3.536 0l2.878-2.878a2.5 2.5 0 0 0 0-3.536l-4.5-4.5A2.5 2.5 0 0 0 7.38 2H4.5ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" /></svg> XX
+                            <hr />
+                            <span class="siff1showtime">17:25</span>
+                            <span class="siff1showtime">18:55</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="w-full flex justify-center">
+
+        <div class="w-full max-w-[800px] px-4">
+            <div class="w-full align-middle text-left mt-8 mb-4 siff1sech relative">
+                <Image src={bg} alt="background" class="inline object-cover h-11 w-full mix-blend-plus-lighter"/>
+                <p class="absolute inset-0 px-3 py-1.5 text-2xl font-bold text-zinc-950 ">About</p>
+            </div>
+
+            <div>
+                <h1 class="siff1sech px-3 py-2 font-bold">What is Siriraj Film Festival?</h1>
+                <div class="siff1text">
+                    <p>เทศกาลภาพยนตร์สั้นครั้งแรกของศิริราช จากความร่วมมือของชมรม Siriraj Motion Picture และกิจกรรม Art Space 2025 ที่เปิดโอกาสให้ผู้ที่สนใจ ผลิตภาพยนตร์สั้นเพื่อฉายในงาน รวมทั้งยังมีการฉายภาพยนตร์จากนักศึกษาแพทย์ต่างสถาบันภายในงาน เพื่อแลกเปลี่ยนประสบการณ์และผลงายต่าง ๆ ด้วย</p>
+                </div>
+
+                <h1 class="siff1sech px-3 py-2 font-bold">Date & Time</h1>
+                <div class="siff1text">
+                    <p>วันพุธที่ 18 กุมภาพันธ์ 2568<br/>เวลา 17.00 น. เป็นต้นไป</p>
+                </div>
+
+                <h1 class="siff1sech px-3 py-2 font-bold">Venue</h1>
+                <div class="siff1text">
+                    <p>ใต้พลับพลาสยามินทราศิริราชานุสรณีย์ สวนเฉลิมพระเกียรติ 72 พรรษา (สวนรถไฟ) โรงพยาบาลศิริราช - <a href="https://maps.app.goo.gl/wJt3D5bsHs4kdUkp8" class="link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="inline size-3"><path d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z" /><path d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z" /></svg> Google Map</a></p>
+                </div>
+
+                <h1 class="siff1sech px-3 py-2 font-bold">Organized by</h1>
+                <div class="siff1text">
+                    <a href="/about"> <img src="/fulllogo-nobg.png" class="w-full max-w-[100px] inline p-2 m-2"/> </a>
+                    <a href="https://instagram.com/art_space.2025"> <Image src={ASlogo} alt="background" class="w-full max-w-[100px] inline"/> </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</BaseLayoutFull>

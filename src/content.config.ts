@@ -23,6 +23,7 @@ const filmsCollection = defineCollection({
             gallery: z.array(image()).optional(),
             displaygallerylink: z.boolean(),
             gallerylink: z.string().optional(),
+            draft: z.boolean(),
         })
 });
 
@@ -44,6 +45,7 @@ const projectsCollection = defineCollection({
             gallery: z.array(image()).optional(),
             displaygallerylink: z.boolean(),
             gallerylink: z.string().optional(),
+            draft: z.boolean(),
         }) 
 });
 

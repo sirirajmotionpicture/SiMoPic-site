@@ -4,7 +4,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Films - Siriraj Motion Picture Club";
 
 import { getCollection } from 'astro:content';
-const allFilms = (await getCollection('films')).sort(
+const publishedFilms = await getCollection('films', ({ data }) => {
+  return data.draft !== true;
+});
+const sortedFilms = publishedFilms.sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
@@ -13,7 +16,7 @@ const allFilms = (await getCollection('films')).sort(
 	<div class ="pagetitle">FILMS</div>
 
 	<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-4">
-		{allFilms.map((post: any) => 
+		{sortedFilms.map((post: any) => 
 			<a href={`/films/${post.id}`}>
 				<div class="h-full flex flex-col">
 					<div class="flex-none border-zinc-400 border-x-1 border-t-1"><Image src={post.data.cover} alt="" class="aspect-4/5 object-cover"/></div>

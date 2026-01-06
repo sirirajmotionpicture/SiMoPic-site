@@ -8,11 +8,12 @@ genre:
 runtime: 5
 watchlink: https://www.youtube.com/watch?v=6n_SufX1Pd0
 slug: 2025-bls-for-deaf
-cover: ../../assets/2025-bls-for-deaf.jpg
+cover: ../../assets/film/2025-bls-for-deaf.jpg
 displaygallery: true
 gallery:
-  - ../../assets/2025-bls-for-deaf-3.jpg
+  - ../../assets/filmgallery/2025-bls-for-deaf-3.jpg
 displaygallerylink: false
+draft: false
 ---
 <p style="text-align: center">เป็นส่วนหนึ่งของกิจกรรม<br><strong>Basic Life Support (BLS) Workshop สำหรับผู้พิการทางการได้ยิน</strong><br>ร่วมกับชมรม Siriraj Better Together</p>
 

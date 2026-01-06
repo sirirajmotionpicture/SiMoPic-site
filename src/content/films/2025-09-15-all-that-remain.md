@@ -10,7 +10,7 @@ genre:
 runtime: 5
 watchlink: https://www.instagram.com/reel/DOlHzv-DkPw/?igsh=MWlnaTZ6NzdvamdtdA==
 slug: 2025-all-that-remain
-cover: ../../assets/2025-all-that-remain.jpg
+cover: ../../assets/film/2025-all-that-remain.jpg
 displaygallery: true
 gallery:
   - ../../assets/filmgallery/2025-all-that-remain-2.jpg
@@ -23,6 +23,7 @@ gallery:
   - ../../assets/filmgallery/2025-all-that-remain-1.jpg
 displaygallerylink: true
 gallerylink: https://youtu.be/FgunP-n6Yxg?t=952
+draft: false
 ---
 <p style="text-align: center">Screened in<br><strong>รายการพิเศษเนื่องในวันมหิดล ประจำปี 2568</strong><br>สถานีโทรทัศน์กองทัพบก (TV5HD), TNN2, ไทยรัฐทีวี, PPTVHD36, one31<br>13 กันยายน 2568 เวลา 16.00 - 18.00 น.</p>
 

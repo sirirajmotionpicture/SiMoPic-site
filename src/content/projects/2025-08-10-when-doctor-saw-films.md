@@ -8,9 +8,10 @@ regisfrom: วันนี้
 registo: 18 Aug 2025
 regislink: https://docs.google.com/forms/d/e/1FAIpQLSf9_4o2wWoDicA_hb5n_sMn-dzRG5aZ5ZCSY9oGeX3sjAPSaA/viewform?usp=dialog
 slug: 2025-when-doc-saw-films
-cover: ../../assets/when doc saw films.jpg
+cover: ../../assets/project/2025-proj-when-doc-saw-film.jpg
 displaygallery: false
 displaygallerylink: false
+draft: false
 ---
 ### '~Book~ Movie Club' ประจำปีของชมรม Siriraj Motion Picture
 
