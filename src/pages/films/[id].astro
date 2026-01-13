@@ -91,7 +91,7 @@ const { Content } = await render(post);
                     <div class="col-span-1"><b>Project</b></div>
                     <div class="col-span-3"><a href={post.data.projectlink}>{post.data.projectname}</a></div>
                     <div class="col-span-1"><b>Genre</b></div>
-                    <div class="col-span-3">{post.data.genre}</div>
+                    <div class="col-span-3">{post.data.genre.join(", ")}</div>
                     <div class="col-span-1"><b>Runtime</b></div>
                     <div class="col-span-3">{post.data.runtime} mins</div>
                 </div>      

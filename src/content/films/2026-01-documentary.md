@@ -1,13 +1,13 @@
 ---
-title: The Art of Film Maker
+title: Physiology of a Filmmaker
 date: 2026-02-18
 projectname: เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1
-projectlink: /p/SiFF-1
+projectlink: /p/sifilmfest-1
 genre:
   - Documentary
 runtime: 0
-watchlink: /p/SiFF-1
-slug: 2026-the-art-of-filmmaker
+watchlink: /p/sifilmfest-1
+slug: 2026-physio-filmmaker
 cover: ../../assets/SiFF1/films/0 Placeholder.png
 displaygallery: false
 displaygallerylink: false
