@@ -49,6 +49,19 @@ const projectsCollection = defineCollection({
         }) 
 });
 
+const movienightCollection = defineCollection({
+    loader: glob({ pattern:"*.md", base: "./src/content/movienight" }),
+    schema: 
+        ({ image }) => z.object({
+            title: z.string(),
+            cover: image(),
+            date: z.date(),
+            time: z.string().optional(),
+            place: z.string(),
+            draft: z.boolean(),
+        }) 
+});
+
 const teamCollection = defineCollection({
     loader: file("./src/content/team/team.json", { parser: (text) => JSON.parse(text).team } ),
     schema: ({ image }) => z.object({
@@ -62,9 +75,20 @@ const teamCollection = defineCollection({
     })
 });
 
+const bannerCollection = defineCollection({
+    loader: file("./src/content/banner/banner.json", { parser: (text) => JSON.parse(text).banner } ),
+    schema: ({ image }) => z.object({
+        cover: image(),
+        link: z.string().optional(),
+        priority: z.number(),
+    })
+});
+
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = { 
     films: filmsCollection,
     projects: projectsCollection,
-    team: teamCollection
+    team: teamCollection,
+    movienight: movienightCollection,
+    banner: bannerCollection
 };

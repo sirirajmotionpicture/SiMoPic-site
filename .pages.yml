@@ -71,6 +71,11 @@ content:
         label: Gallery Link
         type: string
         required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        required: true
  - name: projects
    label: Projects
    path: src/content/projects
@@ -146,6 +151,11 @@ content:
         label: Gallery Link
         type: string
         required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        required: true
  - name: team
    label: Team
    path: src/content/team/team.json
@@ -207,6 +217,64 @@ content:
       - name: body
         label: Body
         type: rich-text
+ - name: movienight
+   label: Movie Night
+   path: src/content/movienight
+   type: collection
+   view:
+      fields: [ title, date ]
+      default:
+         sort: date
+         order: desc
+   fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        description: must be in 'yyyy-mm-dd' format
+        required: true
+      - name: time
+        label: Time
+        type: string
+      - name: place
+        label: Location
+        type: string
+        required: true
+      - name: cover
+        label: Cover Image
+        type: image
+        required: true
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+        required: true
+ - name: banner
+   label: Banner
+   path: src/content/banner/banner.json
+   type: file
+   fields:
+      - name: cover
+        label: Cover Image
+        type: image
+        required: true
+      - name: link
+        label: Link to
+        type: string
+        required: false
+      - name: priority
+        label: Priority
+        type: number
+        description: 1 being the highest
+        required: true
+      - name: id
+        label: ID
+        type: string
+        description: any UNIQUE text without space
+        required: true
 
 media:
 - name: assets

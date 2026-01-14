@@ -4,24 +4,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Siriraj Motion Picture Club";
 
 import { getCollection } from 'astro:content';
+
 const publishedFilms = await getCollection('films', ({ data }) => {
   return data.draft !== true;
 });
 const sortedFilms = publishedFilms.sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+
 const publishedProjects = await getCollection('projects', ({ data }) => {
   return data.draft !== true;
 });
 const sortedProjects = publishedProjects.sort(
   (a, b) => b.data.datefrom.valueOf() - a.data.datefrom.valueOf(),
 );
+
+const Banners = await getCollection('banner');
+const sortedBanners = Banners.sort(
+  (a, b) => a.data.priority.valueOf() - b.data.priority.valueOf(),
+);
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
-	<!-- banner -->
+	<!-- hero -->
 	<div class="w-full h-(--banner-height-sm) md:h-(--banner-height) bg-[url(../banner.jpg)] bg-cover bg-center mb-8"></div>
 
+	<!-- banner 
+	<section>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+			{sortedBanners.map((post: any) => <div class="w-full"><a href={`${post.data.link}`}><Image class="w-full aspect-4/1 object-cover" src={post.data.cover} alt={post.id}/></a></div>)}
+		</div>
+	</section>
+	-->
 
 	<!-- upcoming -->
 	<section>

@@ -14,7 +14,7 @@ displaygallerylink: false
 draft: true
 ---
 
-<p style="text-align: center">เป็นส่วนหนึ่งของ<br><strong>เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1</strong><br>งาน Art Space 2025 18 ก.พ. 2569 เวลา 17.00 น.<br/><i>ติดตามรายละเอียดและรอบฉายได้ <a href="/p/sifilmfest-1">ที่นี่</a></i></p>
+[![A starry night sky.](../../assets/banners/sitebanner-filmfest.png)](/p/sifilmfest-1)
 
 ### Synopsis
 

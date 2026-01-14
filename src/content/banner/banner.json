@@ -1,0 +1,16 @@
+{
+  "banner": [
+    {
+      "cover": "../../assets/banners/sitebanner-filmfest.png",
+      "link": "/p/sifilmfest-1",
+      "priority": 1,
+      "id": "filmfest"
+    },
+    {
+      "cover": "../../assets/banners/sitebanner-movienight.png",
+      "link": "/p/movienight",
+      "priority": 2,
+      "id": "movienight"
+    }
+  ]
+}
