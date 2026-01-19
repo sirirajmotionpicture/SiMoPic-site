@@ -3,7 +3,9 @@ title: "[MEDTU] Insomnia"
 date: 2026-02-18
 projectname: เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1
 projectlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
-runtime: 11
+genre:
+  - Drama
+runtime: 16
 watchlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
 slug: 2026-MEDTU-1
 cover: ../../assets/SiFF1/films/4 MEDTU1 ig.png
