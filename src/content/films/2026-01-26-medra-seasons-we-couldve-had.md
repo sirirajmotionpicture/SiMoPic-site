@@ -12,7 +12,7 @@ slug: 2026-MEDRA-1
 cover: ../../assets/SiFF1/films/6 Seasons We Couldve Had.png
 displaygallery: false
 displaygallerylink: false
-draft: false
+draft: true
 ---
 [![Siriraj Short Film Festival](../../assets/banners/sitebanner-filmfest.png)](/p/sifilmfest-1)
 
