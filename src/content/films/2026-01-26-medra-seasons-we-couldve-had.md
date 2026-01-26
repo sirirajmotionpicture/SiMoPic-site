@@ -1,5 +1,5 @@
 ---
-title: "[MEDRA] Seasons We Could've Had"
+title: "[RAMD] Seasons We Could've Had"
 date: 2026-02-18
 time: "17.00"
 projectname: เทศกาลภาพยนตร์สั้นศิริราช ครั้งที่ 1
