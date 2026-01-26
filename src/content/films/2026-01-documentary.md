@@ -6,14 +6,13 @@ projectlink: /p/sifilmfest-1
 genre:
   - Documentary
 runtime: 0
-watchlink: /p/sifilmfest-1
+watchlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
 slug: 2026-physio-filmmaker
-cover: ../../assets/SiFF1/films/0 Placeholder.png
+cover: ../../assets/SiFF1/films/3 physiology.png
 displaygallery: false
 displaygallerylink: false
 draft: true
 ---
-
 [![A starry night sky.](../../assets/banners/sitebanner-filmfest.png)](/p/sifilmfest-1)
 
 ### Synopsis
