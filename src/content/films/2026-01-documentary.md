@@ -11,7 +11,7 @@ slug: 2026-physio-filmmaker
 cover: ../../assets/SiFF1/films/3 physiology.png
 displaygallery: false
 displaygallerylink: false
-draft: true
+draft: false
 ---
 [![A starry night sky.](../../assets/banners/sitebanner-filmfest.png)](/p/sifilmfest-1)
 
