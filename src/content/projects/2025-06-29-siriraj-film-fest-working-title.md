@@ -13,11 +13,7 @@ gallery:
 displaygallerylink: false
 draft: true
 ---
-
-<script type="text/javascript">
-    window.location = "/p/sifilmfest-1";
-</script>
-
+<script type="text/javascript">window.location = "[https://sirirajmotionpicture.pages.dev/p/sifilmfest-1/](http://www.google.com/)";</script>
 
 ### Film Fest คืออะไร??
 
