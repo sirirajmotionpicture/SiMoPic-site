@@ -5,7 +5,7 @@ projectname: เทศกาลภาพยนตร์สั้นศิริ�
 projectlink: /p/sifilmfest-1
 genre:
   - Documentary
-runtime: 0
+runtime: 21
 watchlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
 slug: 2026-physio-filmmaker
 cover: ../../assets/SiFF1/films/3 physiology.png
@@ -25,16 +25,35 @@ draft: false
 
 * * *
 
-<iframe class="aspect-video w-full" src="https://www.youtube.com/embed/nis-j9tnL88" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-### Cast
+### Cast & Crew
 
 * * *
 
-_coming soon_
+**ร่วมพูดคุย / Interviewees**   
+วริศ ลัภนะฐิติ Waris Lappanathiti  
+ณัฐวรรธ เมืองแก้ว Natthawat Muangkaew  
+กนกรดา แซ่โซว Kanokrada Sae-sow  
+นันทนัช จันทรรัตน์ Nanthanat Chantararat
 
-### Crew
+**ร่วมอุดมการณ์ / Special thank to**   
+กอง “เพื่อน” โดย วริศ ลัภนะฐิติ  
+กอง “พีเวฟ” โดย ณัฐวรรธ เมืองแก้ว  
+สมาชิกชมรม Siriraj Motion Picture
 
-* * *
+**Director**  
+กนกรดา แซ่โซว Kanokrada Sae-sow
 
-_coming soon_
+**ร่วมตั้งคำถาม / Script writer**  
+กนกรดา แซ่โซว Kanokrada Sae-sow  
+ณัฐวรรธ เมืองแก้ว Natthawat Muangkaew
+
+**ลำดับภาพ / Editor**   
+วริศ ลัภนะฐิติ Waris Lappanathiti
+
+**ถ่ายภาพและบันทึกเสียง / Cinematographer and Sound Technician**  
+วริศ ลัภนะฐิติ Waris Lappanathiti
+
+**ผู้ช่วยกองถ่าย / Crew Member**  
+วริศ ลัภนะฐิติ Waris Lappanathiti  
+ณัฐวรรธ เมืองแก้ว Natthawat Muangkaew  
+นันทนัช จันทรรัตน์ Nanthanat Chantararat
