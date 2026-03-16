@@ -1,10 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayoutFull.astro';
 import Prose from '../components/Prose.astro';
 
 const pageTitle = "About - Siriraj Motion Picture Club";
 
+// set var "ay" as academic year (apr - mar)
 const d = new Date();
 let month = d.getMonth();
 let year = d.getFullYear();
@@ -14,78 +15,93 @@ if (month <= 3) {
 };
 
 import { getCollection } from 'astro:content';
-const latestTeam = await getCollection('team', ({ data }) => {
-	return data.ay == ay;
-});
-const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !== ay;})).sort((a, b) => b.data.ay.valueOf() - a.data.ay.valueOf(),);
+// latest team = current academic year (entries that match with var "ay"), sorted by id
+const latestTeam = (await getCollection('team', ({ data }) => {return data.ay == ay;})).sort((a, b) => a.data.id - b.data.id);
+// alumni = previous team (entries that don't match with var "ay"), sorted by id
+const alumniTeam = (await getCollection('team', ({ data }) => {return data.ay !== ay;})).sort((a, b) => a.data.id - b.data.id);
 
 import Content from '../content/about.md';
-import contentImg from '../content/about.jpg';
+import contentImg from '../assets/banners/about.jpg';
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
+	<section id="hero">
+		<div class="herohalf-resp" style={`background-image: url(${contentImg.src});`}>
+			<div class="flex size-full backdrop-brightness-50">
+				<span class="m-auto text-4xl font-bold">ABOUT US</span>
+			</div>
+        </div>
+    </section>
+
+
 	<!-- info -->
-	<section>
-		<div class="sectionh">
-			<p>Who Are We?</p>
-		</div>
-		<div class="sectionb grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-			<div class="col-span-1 lg:col-span-2 pb-4 md:pb-0 pr-0 md:pr-4">
+	<section class="sec">
+		<div class="secdiv">
+			<div class="sech pattbg">
+				<p>Who Are We?</p>
+			</div>
+			<div class="secb">
 				<Prose>
-                	<Content />
+					<Content />
 				</Prose>
 			</div>
-			<div><Image alt="" src={contentImg}  /></div>
 		</div>
 	</section>
 
 	<!-- teams -->
-	<section>
-		<div class="sectionh">
-			<p>Our Team</p>
-		</div>
-		<div class="sectionb grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-			{latestTeam.map((post: any) => 
-			<div class="flex flex-col">
-				<div class=""><Image src={post.data.cover} alt="" /></div>
-				<div class="">
+	<section class="sec">
+		<div class="secdiv">
+			<div class="sech pattbg">
+				<p>Our Team</p>
+			</div>
+			<div class="secb grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+				<!-- map "latest team" entries -->
+				{latestTeam.map((post: any) => 
+				<div class="flex flex-col place-items-center">
+					<div class=""><Image src={post.data.cover} alt="" /></div>
 					<div class="nameh">{post.data.nickname}</div>
 					<div class="nameb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}</span></div>
-				</div>
-			</div>)}
+				</div>)}
+			</div>
 		</div>
 	</section>
 
 	<!-- alumni -->
-	<section>
-		<div class="sectionh">
-			<p>Alumni</p>
-		</div>
-		<div class="sectionb">
-			<script>
-				var groups = {};
-				$('.alumni').each(function () { 
-					var className = this.getAttribute("alumni-ay"),
-					$group = groups[className];
-					if (!$group) {
-						$group = $('<div />', {
-							'class': 'grouping grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4'
-						}).insertAfter(this);
-						groups[className] = $group;
-					}
-					$group.append(this);
-				})
-			</script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			{alumniTeam.map((post: any) => <div class="alumni" alumni-ay={post.data.ay}>
-				<div class="flex flex-col">
-				<div class=""><Image src={post.data.cover} alt="" /></div>
-				<div class="">
-					<div class="alumh">{post.data.nickname}</div>
-					<div class="alumb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}, {post.data.ay}</span></div>
-				</div>
+	<section class="sec">
+		<div class="secdiv">
+			<div class="sech pattbg">
+				<p>Alumni</p>
 			</div>
-			</div>)}
+			<div class="secb">
+				<!-- import library for grouping -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+				<!-- group "alumni" entries by var "ay" -->
+				<script>
+					var groups = {};
+					$('.alumni').each(function () { 
+						var className = this.getAttribute("alumni-ay"),
+						$group = groups[className];
+						if (!$group) {
+							$group = $('<div />', {
+								'class': 'grouping grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 gap-4'
+							}).insertAfter(this);
+							groups[className] = $group;
+						}
+						$group.append(this);
+					})
+				</script>
+
+				<!-- map "alumni" entries -->
+				{alumniTeam.map((post: any) => <div class="alumni" alumni-ay={post.data.ay}>
+					<div class="flex flex-col place-items-center">
+						<div class=""><Image src={post.data.cover} alt="" /></div>
+						<div class="alumh">{post.data.nickname}</div>
+						<div class="alumb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}, {post.data.ay}</span></div>
+					</div>
+				</div>)}
+
+			</div>
 		</div>
 	</section>
 

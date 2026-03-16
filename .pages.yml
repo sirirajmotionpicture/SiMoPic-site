@@ -35,8 +35,21 @@ content:
       - name: runtime
         label: Runtime (mins)
         type: number
+      - name: trailerisyt
+        label: Display Trailer as YouTube Embed
+        type: boolean
+        required: true
+      - name: traileryt
+        label: Trailer YouTube ID
+        type: string
+        description: (only if "Display Trailer as YouTube Embed" is set to true) YouTube video from URL; ex. https://www.youtube.com/watch?v=iRb67zfMF7M => iRb67zfMF7M
+      - name: trailernonyt
+        label: Trailer Link
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: (only if "Display Trailer as YouTube Embed" is set to true) URL of trailer, displayed as a button
       - name: watchlink
-        label: Video Link
+        label: Full Video Link
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
       - name: slug
@@ -44,6 +57,10 @@ content:
         type: string
         description: ID of each page. Must be in 'YYYY-title' pattern (e.g., 2024-artspace)
       - name: cover
+        label: Cover
+        type: image
+        required: true
+      - name: poster
         label: Poster
         type: image
         required: true
@@ -252,30 +269,6 @@ content:
         type: boolean
         default: true
         required: true
- - name: banner
-   label: Banner
-   path: src/content/banner/banner.json
-   type: file
-   fields:
-      - name: cover
-        label: Cover Image
-        type: image
-        required: true
-      - name: link
-        label: Link to
-        type: string
-        required: false
-      - name: priority
-        label: Priority
-        type: number
-        description: 1 being the highest
-        required: true
-      - name: id
-        label: ID
-        type: string
-        description: any UNIQUE text without space
-        required: true
-
 media:
 - name: assets
   label: Assets

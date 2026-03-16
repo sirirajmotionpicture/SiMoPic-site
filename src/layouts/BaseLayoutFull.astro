@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Navbar from '@/components/navbar.astro';
 import Footer from '@/components/footer.astro';
+import { Font } from "astro:assets";
 
 const { pageTitle } = Astro.props;
 ---
@@ -17,6 +18,8 @@ const { pageTitle } = Astro.props;
 		<!-- Inter Font -->
 		<link rel="preconnect" href="https://rsms.me/">
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<!-- Inter Thai Font -->
+		<Font cssVariable="--font-inter-thai" preload />
 	</head>
 
 	<body>

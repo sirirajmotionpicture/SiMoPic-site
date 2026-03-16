@@ -8,7 +8,10 @@ genre:
 runtime: 5
 watchlink: https://www.youtube.com/watch?v=6n_SufX1Pd0
 slug: 2025-bls-for-deaf
-cover: ../../assets/film/2025-bls-for-deaf.jpg
+trailerisyt: true
+traileryt: 6n_SufX1Pd0
+cover: ../../assets/film/cover/2025-film-cover-bls.png
+poster: ../../assets/film/2025-bls-for-deaf.jpg
 displaygallery: true
 gallery:
   - ../../assets/filmgallery/2025-bls-for-deaf-3.jpg

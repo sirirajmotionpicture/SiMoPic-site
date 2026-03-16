@@ -17,8 +17,12 @@ const filmsCollection = defineCollection({
             projectlink: z.string().optional(),
             genre: z.array(z.string()).optional(),
             runtime: z.number().optional(),
+            trailerisyt: z.boolean(),
+            traileryt: z.string().optional(),
+            trailernonyt: z.string().optional(),
             watchlink: z.string().optional(),
             cover: image(),
+            poster: image(),
             displaygallery: z.boolean(),
             gallery: z.array(image()).optional(),
             displaygallerylink: z.boolean(),
@@ -45,7 +49,7 @@ const projectsCollection = defineCollection({
             gallery: z.array(image()).optional(),
             displaygallerylink: z.boolean(),
             gallerylink: z.string().optional(),
-            draft: z.boolean(),
+            draft: z.boolean()
         }) 
 });
 
@@ -71,16 +75,8 @@ const teamCollection = defineCollection({
         si: z.number(),
         line: z.string(),
         position: z.string(),
-        cover: image()
-    })
-});
-
-const bannerCollection = defineCollection({
-    loader: file("./src/content/banner/banner.json", { parser: (text) => JSON.parse(text).banner } ),
-    schema: ({ image }) => z.object({
         cover: image(),
-        link: z.string().optional(),
-        priority: z.number(),
+        id: z.string(),
     })
 });
 
@@ -90,5 +86,4 @@ export const collections = {
     projects: projectsCollection,
     team: teamCollection,
     movienight: movienightCollection,
-    banner: bannerCollection
 };

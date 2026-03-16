@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayoutFull.astro';
 const pageTitle = "Siriraj Motion Picture Club";
+import hero from '../../public/banner.jpg';
 
 import { getCollection } from 'astro:content';
 
@@ -18,70 +19,86 @@ const publishedProjects = await getCollection('projects', ({ data }) => {
 const sortedProjects = publishedProjects.sort(
   (a, b) => b.data.datefrom.valueOf() - a.data.datefrom.valueOf(),
 );
-
-const Banners = await getCollection('banner');
-const sortedBanners = Banners.sort(
-  (a, b) => a.data.priority.valueOf() - b.data.priority.valueOf(),
-);
 ---
 <BaseLayout pageTitle={pageTitle}>
 	
 	<!-- hero -->
-	<div class="w-full h-(--banner-height-sm) md:h-(--banner-height) bg-[url(../banner.jpg)] bg-cover bg-center mb-8"></div>
+	<section id="hero" class="w-full mb-8">
+		<div class="md:h-(--banner-height) h-(--banner-height-sm) w-full bg-cover md:bg-center bg-position-[center_left_40%] relative flex m-auto" style={`background-image: url(${hero.src});`}>
+			<div class="z-40 absolute bottom-2 w-full grid grid-cols-1 justify-items-center text-zinc-200 pt-2 animate-bounce">
+                <a href="#quote">
+                    <div class="rounded-full w-min p-2 bg-zinc-900"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
+                    </div>
+                </a> 
+            </div>
+        </div>
+		<!--
+        <Image src={hero} alt="hero" class="md:h-(--banner-height) h-(--banner-height-sm) object-cover"/>
+		-->
+    </section>
 
-	<!-- banner -->
-	<section>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-			{sortedBanners.map((post: any) => <div class="w-full"><a href={`${post.data.link}`}><Image class="w-full aspect-4/1 object-cover" src={post.data.cover} alt={post.id}/></a></div>)}
+	<!-- quote -->
+	<section id="quote" class="sec">
+		<div class="secdiv">
+			<p class="text-4xl font-bold text-center pt-4">" ชีวิตยืนยาว <span class="bg-[url(/button.png)] bg-cover bg-clip-text text-transparent">ภาพยนตร์สั้น</span> "</p>
+			<p class="font-bold text-center pt-2">Vita longa, pellicula brevis.</p>
+			<p class="italic text-right pt-4"> - Siriraj Motion Picture Club</p>
+		</div>
+	</section>
+	
+	<!-- projects -->
+	<section id="projects" class="sec">
+        <div class="secdiv">
+			<div class="sech pattbg">🗂️ Recent Projects</div>
+			<div class="secb relative">
+				<div class="mask-b-from-50% mask-b-to-95%">
+					<div class="hidden md:block">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+							{sortedProjects.slice(0, 6).map((post: any) => <div class="w-full hoveranimsm"><a href={`/projects/${post.id}`}><Image src={post.data.cover} class="aspect-4/5 object-cover" alt=""/></a></div>)}
+						</div>
+					</div>
+					<div class="block md:hidden">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+							{sortedProjects.slice(0, 4).map((post: any) => <div class="w-full hoveranimsm"><a href={`/projects/${post.id}`}><Image src={post.data.cover} class="aspect-4/5 object-cover" alt=""/></a></div>)}
+						</div>
+					</div>
+				</div>
+				<div class="z-40 absolute bottom-0 w-full">
+					<a href="/projects">
+						<div class="mx-auto mb-3 rounded-full w-max pl-3 pr-2 py-2 bg-zinc-900 text-sm hoveranimlg"> 
+							<span>see all projects</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 inline"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" /></svg>
+						</div>
+					</a> 
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- upcoming -->
-	<section>
-		<div class="flex flex-row items-center justify-items-end">
-			<div class="sectionh">Recent Projects</div>
-			<div class="grow inline text-right text-sm pb-1">
-				<a class="link" href="/projects">
-					see all projects
-					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-						<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-					</svg>
-				</a>
-			</div>
-		</div>
-		<div class="sectionb">
-			<div class="flex items-center gap-x-4 overflow-x-scroll touch-auto snap-x">
-				{sortedProjects.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={`/projects/${post.id}`}><Image src={post.data.cover} alt=""/></a></div>)}
-			</div>
-			<div class="w-full text-center text-sm text-zinc-500 pt-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
-				scroll to see more
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
-			</div>
-		</div>
-	</section>
-
-	<!-- films --> 
-	<section>
-		<div class="flex flex-row items-center justify-items-end">
-			<div class="sectionh">Recent Films</div>
-			<div class="grow inline text-right text-sm pb-1">
-				<a class="link" href="/films">
-					see all films 
-					<svg class="inline h-4 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-						<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-					</svg>
-				</a>
-			</div>
-		</div>
-		<div class="sectionb">
-			<div class="flex items-center gap-x-4 overflow-x-scroll touch-auto snap-x">
-				{sortedFilms.slice(0, 6).map((post: any) => <div class="shrink-0 snap-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"><a href={`/films/${post.id}`}><Image src={post.data.cover} alt=""/></a></div>)}
-			</div>
-			<div class="w-full text-center text-sm text-zinc-500 pt-2">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
-				scroll to see more
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+	<!-- films -->
+	<section id="films" class="sec">
+        <div class="secdiv">
+			<div class="sech pattbg">🎞️ Recent Films</div>
+			<div class="secb relative">
+				<div class="mask-b-from-50% mask-b-to-95%">
+					<div class="hidden md:block">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+							{sortedFilms.slice(0, 6).map((post: any) => <div class="w-full hoveranimsm"><a href={`/films/${post.id}`}><Image src={post.data.poster} class="aspect-4/5 object-cover" alt=""/></a></div>)}
+						</div>
+					</div>
+					<div class="block md:hidden">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+							{sortedFilms.slice(0, 4).map((post: any) => <div class="w-full hoveranimsm"><a href={`/films/${post.id}`}><Image src={post.data.poster} class="aspect-4/5 object-cover" alt=""/></a></div>)}
+						</div>
+					</div>
+				</div>
+				<div class="z-40 absolute bottom-0 w-full">
+					<a href="/films">
+						<div class="mx-auto mb-3 rounded-full w-max pl-3 pr-2 py-2 bg-zinc-900 text-sm hoveranimlg"> 
+							<span>see all films</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 inline"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" /></svg>
+						</div>
+					</a> 
+				</div>
 			</div>
 		</div>
 	</section>

@@ -9,8 +9,11 @@ genre:
   - Drama
 runtime: 5
 watchlink: https://www.instagram.com/reel/DOlHzv-DkPw/?igsh=MWlnaTZ6NzdvamdtdA==
+trailerisyt: true
+traileryt: FgunP-n6Yxg
 slug: 2025-all-that-remain
-cover: ../../assets/film/2025-all-that-remain.jpg
+cover: ../../assets/film/cover/2025-film-cover-allthatremain.jpg
+poster: ../../assets/film/2025-all-that-remain.jpg
 displaygallery: true
 gallery:
   - ../../assets/filmgallery/2025-all-that-remain-2.jpg

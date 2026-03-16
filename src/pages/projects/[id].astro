@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayoutFull.astro';
 import Prose from '../../components/Prose.astro';
 
 import { getCollection, render } from 'astro:content';
@@ -21,20 +21,20 @@ const { Content } = await render(post);
 
 <BaseLayout pageTitle={post.data.title}>
 
-    <a href="/projects"><div class ="pagecat">PROJECT</div></a>
-    <div class = "pagetitle">{post.data.title}</div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4">
-
-        <div class="col-span-1">
-            <div class="border-zinc-400 border-1 mb-4">
+    <!-- project -->
+    <section class="sec mt-4">
+        <div class="secdiv grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex-none"><a href="/projects"><div class ="pagecat">PROJECT</div></a></div>
+                <div class = "pageh pattbg">{post.data.title}</div>
+            </div>
+            <div>
                 <Image src={post.data.cover} alt=""/>
             </div>
+            <div class="flex flex-col">
+                <div class="sech2 flex-none">✏️ Details</div>
 
-            <div class="2xl:hidden">
-                <div class="sectionh">✏️ Details</div>
-
-                <div class="sectionb">
+                <div class="secb ">
                     <div class="grid grid-cols-4">
                         <div class="col-span-1"><b>Date</b></div>
                         <div class="col-span-3">{post.data.datefrom.toUTCString().slice(0,16)} {post.data.timefrom} ～ {post.data.dateto} {post.data.timeto}</div>
@@ -44,57 +44,48 @@ const { Content } = await render(post);
                         <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
                     </div>      
                 </div>
-                <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮 Register here</div></div></a>    
+
+                <!-- register -->
+                <div class="secb flex-none">
+                    <a href= {post.data.regislink} class=""><div class="buttonbg hoveranimlg"><div class="button">📮 Register here</div></div></a>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <div class="col-span-2 px-0 md:px-8">
-            <Prose>
-                <Content />
-            </Prose>
+    <!-- details -->
+    <section id="details" class="sec">
+        <div class="secdiv">
+            <div class="">
+                <Prose>
+                    <Content />
+                </Prose>
 
-            {post.data.displaygallery && 
-                <div class="sectionh mt-8">📸 Gallery</div>
-                <div class="sectionb">                
-                    <div class="flex flex-row flex-nowrap items-center gap-x-4 overflow-x-scroll touch-auto snap-x snap-mandatory">
-                        {post.data.gallery.map(gallery =>
-                            <div class="snap-center w-full flex-none">
-                                <Image src={gallery} alt="" class="" />
-                            </div>
-                        )}
+                {post.data.displaygallery && 
+                    <div class="sech2 mt-8">📸 Gallery</div>
+                    <div class="secb">                
+                        <div class="flex flex-row flex-nowrap items-center gap-x-4 overflow-x-scroll touch-auto snap-x snap-mandatory">
+                            {post.data.gallery.map(gallery =>
+                                <div class="snap-center w-full flex-none">
+                                    <Image src={gallery} alt="" class="aspect-3/2 object-cover" />
+                                </div>
+                            )}
+                        </div>
+                        <div class="w-full text-center text-sm text-zinc-500 pt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
+                            scroll to see more
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
+                        </div>
                     </div>
-                    <div class="w-full text-center text-sm text-zinc-500 pt-2">
-				        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /></svg>
-				        scroll to see more
-				        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
-			        </div>
-                </div>
-            }
-            {post.data.displaygallerylink && 
-                <div>
-                    📖 read more at: <a class="link" href={post.data.gallerylink}>{post.data.gallerylink}</a>
-                </div>
-            }
-        </div>
-
-        <div class="col-span-1 hidden 2xl:inline">
-
-            <div class="sectionh">✏️ Details</div>
-
-            <div class="sectionb">
-                <div class="grid grid-cols-4">
-                    <div class="col-span-1"><b>Date</b></div>
-                    <div class="col-span-3">{post.data.datefrom.toUTCString().slice(0,16)} {post.data.timefrom} ～ {post.data.dateto} {post.data.timeto}</div>
-                    <div class="col-span-1"><b>Location</b></div>
-                    <div class="col-span-3">{post.data.place}</div>
-                    <div class="col-span-1"><b>Register</b></div>
-                    <div class="col-span-3">{post.data.regisfrom} ～ {post.data.registo}</div>
-                </div> 
+                }
+                {post.data.displaygallerylink && 
+                    <div>
+                        📖 read more at: <a class="link" href={post.data.gallerylink}>{post.data.gallerylink}</a>
+                    </div>
+                }
             </div>
-
-            <a href= {post.data.regislink} class=""><div class="buttonbg"><div class="button">📮 Register here</div></div></a>
         </div>
-
-    </div>
+    </section>
 
 </BaseLayout>

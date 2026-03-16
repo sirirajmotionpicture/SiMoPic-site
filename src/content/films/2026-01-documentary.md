@@ -8,7 +8,11 @@ genre:
 runtime: 21
 watchlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
 slug: 2026-physio-filmmaker
-cover: ../../assets/SiFF1/films/3 physiology.png
+trailerisyt: true
+traileryt: nis-j9tnL88
+trailernonyt: https://www.youtube.com/watch?v=nis-j9tnL88
+cover: ../../assets/film/cover/2026-film-cover-potf.png
+poster: ../../assets/SiFF1/films/3 physiology.png
 displaygallery: false
 displaygallerylink: false
 draft: false
@@ -20,12 +24,6 @@ draft: false
 * * *
 
 สมาชิกชมรมหนังสั้นที่มาร่วมกันจุดไฟฝันครั้งสุดท้าย(?) ทำหนังตามแต่ใจตัวเองในวันที่ชีวิตเป็นใจบ้าง ไม่เป็นใจบ้าง แต่ไม่เป็นไรเพราะมีใจและมีเพื่อน ๆ ที่พร้อมสู้ไปด้วยกันก็พอแล้ว
-
-### Teaser
-
-* * *
-
-<iframe class="aspect-video w-full" src="https://www.youtube.com/embed/nis-j9tnL88" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Cast & Crew
 
