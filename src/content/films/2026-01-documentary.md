@@ -6,11 +6,11 @@ projectlink: /p/sifilmfest-1
 genre:
   - Documentary
 runtime: 21
-watchlink: https://sirirajmotionpicture.pages.dev/p/sifilmfest-1
-slug: 2026-physio-filmmaker
 trailerisyt: true
 traileryt: nis-j9tnL88
 trailernonyt: https://www.youtube.com/watch?v=nis-j9tnL88
+watchlink: https://youtu.be/ea8F-iYJNsw
+slug: 2026-physio-filmmaker
 cover: ../../assets/film/cover/2026-film-cover-potf.png
 poster: ../../assets/SiFF1/films/3 physiology.png
 displaygallery: false
