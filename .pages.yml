@@ -231,8 +231,8 @@ content:
    path: src/content/about.md
    type: file
    fields:
-      - name: body
-        label: Body
+      - name: text
+        label: Text
         type: rich-text
  - name: movienight
    label: Movie Night
