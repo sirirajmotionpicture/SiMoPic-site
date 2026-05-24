@@ -47,7 +47,7 @@ content:
         label: Trailer Link
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-        description: (only if "Display Trailer as YouTube Embed" is set to true) URL of trailer, displayed as a button
+        description: (only if "Display Trailer as YouTube Embed" is set to false) URL of trailer, displayed as a button
       - name: watchlink
         label: Full Video Link
         type: string
@@ -224,7 +224,7 @@ content:
         - name: id
           label: ID
           type: string
-          description: use 'yy-no' pattern (e.g., 24-1), MUST be unique
+          description: use 'yyx' pattern (e.g., 24a, 24b, and so on), MUST be unique
           required: true
  - name: about
    label: About Page
