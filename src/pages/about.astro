@@ -58,7 +58,7 @@ import contentImg from '../assets/banners/about.jpg';
 				<!-- map "latest team" entries -->
 				{latestTeam.map((post: any) => 
 				<div class="flex flex-col place-items-center">
-					<div class=""><Image src={post.data.cover} alt="" /></div>
+					<div class=""><Image src={post.data.cover} class="aspect-square object-cover" alt="" /></div>
 					<div class="nameh">{post.data.nickname}</div>
 					<div class="nameb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}</span></div>
 				</div>)}
@@ -95,7 +95,7 @@ import contentImg from '../assets/banners/about.jpg';
 				<!-- map "alumni" entries -->
 				{alumniTeam.map((post: any) => <div class="alumni" alumni-ay={post.data.ay}>
 					<div class="flex flex-col place-items-center">
-						<div class=""><Image src={post.data.cover} alt="" /></div>
+						<div class=""><Image src={post.data.cover} alt="" class="aspect-square object-cover"/></div>
 						<div class="alumh">{post.data.nickname}</div>
 						<div class="alumb">{post.data.name}<br><small class="italic">SI{post.data.si} {post.data.line}</small><br><span class="font-bold">{post.data.position}, {post.data.ay}</span></div>
 					</div>
