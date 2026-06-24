@@ -209,6 +209,126 @@
       "position": "Core Team",
       "cover": "../../assets/team/25h.jpg",
       "id": "25h"
+    },
+    {
+      "ay": 2026,
+      "nickname": "ณ",
+      "name": "ณัฐวรรธ เมืองแก้ว",
+      "si": 133,
+      "line": "108",
+      "position": "El Presidente",
+      "cover": "../../assets/team/25-1.jpg",
+      "id": "26a"
+    },
+    {
+      "ay": 2026,
+      "nickname": "เทมส์",
+      "name": "ก้องภพ ศรีนุช",
+      "si": 133,
+      "line": "061",
+      "position": "Vice President",
+      "cover": "../../assets/team/25h.jpg",
+      "id": "26b"
+    },
+    {
+      "ay": 2026,
+      "nickname": "ก้อง",
+      "name": "วริศ ลัภนะฐิติ",
+      "si": 132,
+      "line": "240",
+      "position": "Vice President, PR",
+      "cover": "../../assets/team/25-04.jpg",
+      "id": "26c"
+    },
+    {
+      "ay": 2026,
+      "nickname": "แอนนี่",
+      "name": "กนกรดา แซ่โซว",
+      "si": 132,
+      "line": "033",
+      "position": "Coordinator",
+      "cover": "../../assets/team/25-2.jpg",
+      "id": "26d"
+    },
+    {
+      "ay": 2026,
+      "nickname": "หวาย",
+      "name": "นันทนัช จันทรรัตน์",
+      "si": 132,
+      "line": "148",
+      "position": "Treasury",
+      "cover": "../../assets/team/25-3.jpg",
+      "id": "26e"
+    },
+    {
+      "ay": 2026,
+      "nickname": "ฟางอี้",
+      "name": "พาขวัญ ทองอรุณศรี",
+      "si": 137,
+      "line": "068",
+      "position": "Secretary",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26f"
+    },
+    {
+      "ay": 2026,
+      "nickname": "ภูริ",
+      "name": "ภูริ ศิวสิริการุณย์",
+      "si": 134,
+      "line": "231",
+      "position": "Core Team",
+      "cover": "../../assets/team/25-6.jpg",
+      "id": "26g"
+    },
+    {
+      "ay": 2026,
+      "nickname": "เพชร",
+      "name": "ภูษิต อรุณเรือง",
+      "si": 134,
+      "line": "063",
+      "position": "Core Team",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26h"
+    },
+    {
+      "ay": 2026,
+      "nickname": "โทยะ",
+      "name": "ภูมินันท์ โชติชัยชรินทร์",
+      "si": 136,
+      "line": "054",
+      "position": "Core Team",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26i"
+    },
+    {
+      "ay": 2026,
+      "nickname": "แอนนี่",
+      "name": "อัจฉริยา โรจน์บัณฑิต",
+      "si": 133,
+      "line": "040",
+      "position": "Core Team",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26j"
+    },
+    {
+      "ay": 2026,
+      "nickname": "ตุน",
+      "name": "ตฤณ พรหมสุวรรณ",
+      "si": 134,
+      "line": "165",
+      "position": "Core Team",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26k"
+    },
+    {
+      "ay": 2026,
+      "nickname": "แจ๊ม",
+      "name": "ธิติกาญจน์ อสัมภินวัฒน์",
+      "si": 137,
+      "line": "000",
+      "position": "Core Team",
+      "cover": "../../assets/team/mock.jpg",
+      "id": "26l"
     }
   ]
 }
