@@ -18,7 +18,7 @@ displaygallery: false
 displaygallerylink: false
 draft: false
 ---
-<p style="text-align: center;"><b>HOURNORABLE MENTION</b> </br>ภาพยนตร์สั้นจาก<b>ทีมทำหนังรุ่นบุกเบิก</b>แห่งคณะแพทย์ริมน้ำ</p>
+<p style="text-align: center;"><b>HORNORABLE MENTION</b> </br>ภาพยนตร์สั้นจาก<b>ทีมทำหนังรุ่นบุกเบิก</b>แห่งคณะแพทย์ริมน้ำ</p>
 
 ### Synopsis
 
