@@ -8,9 +8,10 @@ genre:
   - Documentary
   - Comedy
 runtime: 10
-trailerisyt: false
-trailernonyt: Google.com
-watchlink: Google.com
+trailerisyt: true
+traileryt: EZDizOJEXxU
+trailernonyt: https://youtu.be/EZDizOJEXxU?si=OTozgLv3j6RidVcG
+watchlink: https://youtu.be/EZDizOJEXxU?si=OTozgLv3j6RidVcG
 slug: 2026-dogumentary
 cover: ../../assets/film/cover/1000047437.jpg
 poster: ../../assets/film/1000047434.jpg
